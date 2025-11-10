@@ -3,6 +3,7 @@ import { motion, useMotionValue, useSpring } from "framer-motion";
 import Image from "/media/home/ab2.webp";
 import ThemeImage from "/media/home/theme.webp";
 import Masonry from "../Masonry";
+import StyledStickyCard from "../StyledStickyCard";
 import GuestImage from "/media/home/guest.jpeg"; // <-- New image import
 
 const springValues = {
@@ -283,7 +284,103 @@ function HomeAbout() {
         </div>
       </section>
 
-      {/* Section 2: Glimpses Gallery Grid */}
+
+      {/* Section 2: Guest Spotlight */}
+      <section className="relative min-h-screen w-full bg-black overflow-hidden py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+        {/* Enhanced background decorative elements */}
+        <div className="absolute top-10 right-10 w-96 h-96 bg-[#d9bf86] opacity-10 rounded-full blur-3xl -z-10" />
+        <div className="absolute bottom-10 left-10 w-72 h-72 bg-white opacity-5 rounded-full blur-3xl -z-10" />
+
+        {/* Subtle grid pattern overlay */}
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+CiAgPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWxsPSJub25lIi8+CiAgPHBhdGggZD0iTTAgMGg0MHY0MEgweiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDMpIiBzdHJva2Utd2lkdGg9IjEiLz4KPC9zdmc+')] opacity-20 -z-10" />
+
+        <div className="max-w-7xl mx-auto flex flex-col items-center justify-center">
+          {/* Section Header */}
+          <div className="mb-12 md:mb-16 text-center">
+            <h2 className="text-[#f0af23] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-[font2] font-extrabold tracking-tight mb-4">
+              Star{" "}
+              <span className="text-white italic font-[font1]">Attraction</span>
+            </h2>
+            <div className="w-24 sm:w-32 h-1 bg-gradient-to-r from-[#f0af23] to-[#d9bf86] mx-auto" />
+            <p className="text-white/70 text-lg sm:text-xl md:text-2xl font-[font1] mt-6 max-w-2xl leading-relaxed">
+              Witness the electrifying performances of renowned artists.
+            </p>
+          </div>
+
+          {/* Main Guest Card Container */}
+          <div className="relative w-full max-w-4xl mx-auto h-[600px] md:h-[800px] lg:h-[900px]">
+            {/* Enhanced Tilted Image Card with integrated name display */}
+            <div className="relative w-full h-full p-4">
+              <div className="relative w-full h-full [perspective:1000px] flex items-center justify-center group">
+                <motion.div
+                  className="relative [transform-style:preserve-3d] w-full h-full"
+                  whileHover={{
+                    scale: 1.02,
+                    rotateX: 5,
+                    rotateY: 5,
+                  }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
+                >
+                  {/* Guest Image */}
+                  <img
+                    src={GuestImage}
+                    alt="Guest Performer"
+                    className="w-full h-full object-cover rounded-2xl shadow-2xl"
+                  />
+
+                  {/* Fixed Gradient Overlay - Reduced opacity and simplified */}
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#f0af23]/10 to-transparent pointer-events-none" />
+
+                  {/* Name Overlay - Hidden by default, appears on hover */}
+                  <div className="absolute inset-0 flex flex-col justify-end p-4 md:p-6 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    {/* Names Container - Bottom Left */}
+                    <div className="w-full">
+                      {/* First Name - Top */}
+                      <div
+                        className="text-[#f0af23] font-[font2] font-black leading-none mb-1"
+                        style={{
+                          fontSize: "clamp(3rem, 7vw, 7rem)",
+                        }}
+                      >
+                        Arjit
+                      </div>
+
+                      {/* Surname - Bottom */}
+                      <div
+                        className="text-[#f0af23] font-[font2] font-black leading-none"
+                        style={{
+                          fontSize: "clamp(3.5rem, 9vw, 9rem)",
+                        }}
+                      >
+                        Singh
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+
+            {/* Decorative corner elements */}
+            <div className="absolute -top-4 -left-4 w-20 h-20 sm:w-24 sm:h-24 border-t-2 border-l-2 border-[#f0af23] rounded-tl-3xl opacity-50" />
+            <div className="absolute -bottom-4 -right-4 w-20 h-20 sm:w-24 sm:h-24 border-b-2 border-r-2 border-[#d9bf86] rounded-br-3xl opacity-50" />
+
+            {/* Additional decorative elements */}
+            <div className="absolute top-1/2 -left-4 w-1 h-16 bg-gradient-to-b from-transparent via-[#f0af23] to-transparent transform -translate-y-1/2 opacity-30" />
+            <div className="absolute top-1/2 -right-4 w-1 h-16 bg-gradient-to-b from-transparent via-[#d9bf86] to-transparent transform -translate-y-1/2 opacity-30" />
+          </div>
+
+          {/* Enhanced Bottom Decorative Line */}
+          <div className="mt-16 md:mt-20 flex items-center gap-3 md:gap-4">
+            <div className="flex-1 h-px bg-gradient-to-r from-transparent via-white to-transparent" />
+            <div className="w-2 h-2 bg-white rounded-full shadow-[0_0_8px_2px_rgba(255,255,255,0.5)]" />
+            <div className="w-2 h-2 bg-[#f0af23] rounded-full shadow-[0_0_8px_2px_rgba(240,175,35,0.5)]" />
+            <div className="w-2 h-2 bg-[#d9bf86] rounded-full shadow-[0_0_8px_2px_rgba(217,191,134,0.5)]" />
+            <div className="flex-1 h-px bg-gradient-to-l from-transparent via-[#f0af23] to-transparent" />
+          </div>
+        </div>
+      </section>
+
+      {/* Section 3: Glimpses Gallery Grid */}
       <section className="relative min-h-screen w-full bg-black overflow-hidden py-16 md:py-24 px-4 sm:px-6 lg:px-8">
         {/* Enhanced background decorative elements with better positioning */}
         <div className="absolute top-20 right-10 w-80 h-80 bg-[#d9bf86] opacity-10 rounded-full blur-3xl -z-10" />
@@ -334,7 +431,7 @@ function HomeAbout() {
         </div>
       </section>
 
-      {/* Section 3: Theme */}
+      {/* Section 4: Theme */}
       <section className="relative min-h-screen w-full bg-black overflow-hidden py-16 md:py-24 px-4 sm:px-6 lg:px-8">
         {/* Enhanced background decorative elements with better positioning */}
         <div className="absolute top-20 left-10 w-80 h-80 bg-[#f0af23] opacity-10 rounded-full blur-3xl -z-10" />
@@ -449,95 +546,46 @@ function HomeAbout() {
         </div>
       </section>
 
-      {/* Section 4: Guest Spotlight */}
-<section className="relative min-h-screen w-full bg-black overflow-hidden py-16 md:py-24 px-4 sm:px-6 lg:px-8">
-  {/* Enhanced background decorative elements */}
-  <div className="absolute top-10 right-10 w-96 h-96 bg-[#d9bf86] opacity-10 rounded-full blur-3xl -z-10" />
-  <div className="absolute bottom-10 left-10 w-72 h-72 bg-white opacity-5 rounded-full blur-3xl -z-10" />
-  
-  {/* Subtle grid pattern overlay */}
-  <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+CiAgPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWxsPSJub25lIi8+CiAgPHBhdGggZD0iTTAgMGg0MHY0MEgweiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDMpIiBzdHJva2Utd2lkdGg9IjEiLz4KPC9zdmc+')] opacity-20 -z-10" />
+      
 
-  <div className="max-w-7xl mx-auto flex flex-col items-center justify-center">
-    {/* Section Header */}
-    <div className="mb-12 md:mb-16 text-center">
-      <h2 className="text-[#f0af23] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-[font2] font-extrabold tracking-tight mb-4">
-        Star <span className="text-white italic font-[font1]">Attraction</span>
-      </h2>
-      <div className="w-24 sm:w-32 h-1 bg-gradient-to-r from-[#f0af23] to-[#d9bf86] mx-auto" />
-      <p className="text-white/70 text-lg sm:text-xl md:text-2xl font-[font1] mt-6 max-w-2xl leading-relaxed">
-        Witness the electrifying performances of renowned artists.
-      </p>
-    </div>
+      {/* 3 overlap slides */}
+      {/* 💥 Section 5: Overlap Slides - IMPROVED STYLE 💥 */}
+      <section>
+        {/* 🧩 Container height = 100vh × number of sticky cards
+      This ensures each card has full scroll space to stick properly 
+      and the last one doesn't overflow or escape the section */}
+        <div
+          className="relative w-full bg-black"
+          style={{ height: `${3 * 100}vh` }} // 3 cards × 100vh each
+        >
+          {/* Card 1: Opto-Réseau */}
+          <StyledStickyCard
+            imageSrc="/grid/p1.jpg"
+            altText="Opto-Réseau"
+            subTitle="Featured Segment"
+            title="We see you like no other"
+            url="https://k72.ca/en/work/we-see-you-like-no-other"
+          />
 
-    {/* Main Guest Card Container */}
-    <div className="relative w-full max-w-4xl mx-auto h-[600px] md:h-[800px] lg:h-[900px]">
-      {/* Enhanced Tilted Image Card with integrated name display */}
-      <div className="relative w-full h-full p-4">
-        <div className="relative w-full h-full [perspective:1000px] flex items-center justify-center group">
-          <motion.div
-            className="relative [transform-style:preserve-3d] w-full h-full"
-            whileHover={{ 
-              scale: 1.02,
-              rotateX: 5, 
-              rotateY: 5,
-            }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          >
-            {/* Guest Image */}
-            <img
-              src={GuestImage}
-              alt="Guest Performer"
-              className="w-full h-full object-cover rounded-2xl shadow-2xl"
-            />
-            
-            {/* Fixed Gradient Overlay - Reduced opacity and simplified */}
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#f0af23]/10 to-transparent pointer-events-none" />
-            
-            {/* Name Overlay - Hidden by default, appears on hover */}
-            <div className="absolute inset-0 flex flex-col justify-end p-4 md:p-6 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              {/* Names Container - Bottom Left */}
-              <div className="w-full">
-                {/* First Name - Top */}
-                <div className="text-[#f0af23] font-[font2] font-black leading-none mb-1" 
-                     style={{ 
-                       fontSize: "clamp(3rem, 7vw, 7rem)",
-                     }}>
-                  Arjit
-                </div>
-                
-                {/* Surname - Bottom */}
-                <div className="text-[#f0af23] font-[font2] font-black leading-none" 
-                     style={{ 
-                       fontSize: "clamp(3.5rem, 9vw, 9rem)",
-                     }}>
-                  Singh
-                </div>
-              </div>
-            </div>
-          </motion.div>
+          {/* Card 2: Lamajeure */}
+          <StyledStickyCard
+            imageSrc="/grid/p2.jpg"
+            altText="Lamajeure"
+            subTitle="Behind the Scenes"
+            title="Lamajeure"
+            url="https://k72.ca/en/work/lamajeure"
+          />
+
+          {/* Card 3: Fruité */}
+          <StyledStickyCard
+            imageSrc="/grid/p4.jpg"
+            altText="Lassonde Fruité"
+            subTitle="Creative Showcase"
+            title="Fruité"
+            url="https://k72.ca/en/work/fruite"
+          />
         </div>
-      </div>
-      
-      {/* Decorative corner elements */}
-      <div className="absolute -top-4 -left-4 w-20 h-20 sm:w-24 sm:h-24 border-t-2 border-l-2 border-[#f0af23] rounded-tl-3xl opacity-50" />
-      <div className="absolute -bottom-4 -right-4 w-20 h-20 sm:w-24 sm:h-24 border-b-2 border-r-2 border-[#d9bf86] rounded-br-3xl opacity-50" />
-      
-      {/* Additional decorative elements */}
-      <div className="absolute top-1/2 -left-4 w-1 h-16 bg-gradient-to-b from-transparent via-[#f0af23] to-transparent transform -translate-y-1/2 opacity-30" />
-      <div className="absolute top-1/2 -right-4 w-1 h-16 bg-gradient-to-b from-transparent via-[#d9bf86] to-transparent transform -translate-y-1/2 opacity-30" />
-    </div>
-
-    {/* Enhanced Bottom Decorative Line */}
-    <div className="mt-16 md:mt-20 flex items-center gap-3 md:gap-4">
-      <div className="flex-1 h-px bg-gradient-to-r from-transparent via-white to-transparent" />
-      <div className="w-2 h-2 bg-white rounded-full shadow-[0_0_8px_2px_rgba(255,255,255,0.5)]" />
-      <div className="w-2 h-2 bg-[#f0af23] rounded-full shadow-[0_0_8px_2px_rgba(240,175,35,0.5)]" />
-      <div className="w-2 h-2 bg-[#d9bf86] rounded-full shadow-[0_0_8px_2px_rgba(217,191,134,0.5)]" />
-      <div className="flex-1 h-px bg-gradient-to-l from-transparent via-[#f0af23] to-transparent" />
-    </div>
-  </div>
-</section>
+      </section>
     </>
   );
 }

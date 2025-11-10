@@ -23,7 +23,7 @@ const HeroTiles = ({ images = [], logo = "", menuIcon = null, signInLabel = "SIG
                   <img 
                     src={img(0)} 
                     alt="tile 0" 
-                    className="object-cover w-full h-full transform transition-all duration-500 opacity-60 group-hover:opacity-100 group-hover:brightness-110" 
+                    className="object-cover w-full h-full transform transition-all duration-500 opacity-30 group-hover:opacity-100 group-hover:brightness-105" 
                   />
                   <div className="overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-70 group-hover:opacity-40 transition-all duration-500" />
                 </div>
@@ -35,7 +35,7 @@ const HeroTiles = ({ images = [], logo = "", menuIcon = null, signInLabel = "SIG
                   <img 
                     src={img(1)} 
                     alt="tile 1" 
-                    className="object-cover w-full h-full transform transition-all duration-500 opacity-60 group-hover:opacity-100 group-hover:brightness-110" 
+                    className="object-cover w-full h-full transform transition-all duration-500 opacity-30 group-hover:opacity-100 group-hover:brightness-105" 
                   />
                   <div className="overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-70 group-hover:opacity-40 transition-all duration-500" />
                 </div>
@@ -47,7 +47,7 @@ const HeroTiles = ({ images = [], logo = "", menuIcon = null, signInLabel = "SIG
                   <img 
                     src={img(4)} 
                     alt="tile 4" 
-                    className="object-cover w-full h-full transform transition-all duration-500 opacity-60 group-hover:opacity-100 group-hover:brightness-110" 
+                    className="object-cover w-full h-full transform transition-all duration-500 opacity-30 group-hover:opacity-100 group-hover:brightness-105" 
                   />
                   <div className="overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-70 group-hover:opacity-40 transition-all duration-500" />
                 </div>
@@ -59,7 +59,7 @@ const HeroTiles = ({ images = [], logo = "", menuIcon = null, signInLabel = "SIG
                   <img 
                     src={img(2)} 
                     alt="tile 2" 
-                    className="object-cover w-full h-full transform transition-all duration-500 opacity-60 group-hover:opacity-100 group-hover:brightness-110" 
+                    className="object-cover w-full h-full transform transition-all duration-500 opacity-30 group-hover:opacity-100 group-hover:brightness-105" 
                   />
                   <div className="overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-70 group-hover:opacity-40 transition-all duration-500" />
                 </div>
@@ -71,7 +71,7 @@ const HeroTiles = ({ images = [], logo = "", menuIcon = null, signInLabel = "SIG
                   <img 
                     src={img(3)} 
                     alt="tile 3" 
-                    className="object-cover w-full h-full transform transition-all duration-500 opacity-60 group-hover:opacity-100 group-hover:brightness-110" 
+                    className="object-cover w-full h-full transform transition-all duration-500 opacity-30 group-hover:opacity-100 group-hover:brightness-105" 
                   />
                   <div className="overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-70 group-hover:opacity-40 transition-all duration-500" />
                 </div>
@@ -83,7 +83,7 @@ const HeroTiles = ({ images = [], logo = "", menuIcon = null, signInLabel = "SIG
                   <img 
                     src={img(5)} 
                     alt="tile 5" 
-                    className="object-cover w-full h-full transform transition-all duration-500 opacity-60 group-hover:opacity-100 group-hover:brightness-110" 
+                    className="object-cover w-full h-full transform transition-all duration-500 opacity-30 group-hover:opacity-100 group-hover:brightness-105" 
                   />
                   <div className="overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-70 group-hover:opacity-40 transition-all duration-500" />
                 </div>
@@ -100,7 +100,7 @@ const HeroTiles = ({ images = [], logo = "", menuIcon = null, signInLabel = "SIG
                     <img 
                       src={img(0)} 
                       alt="tile 0" 
-                      className="object-cover w-full h-full transform transition-all duration-500 opacity-60 group-hover:opacity-100 group-hover:brightness-110" 
+                      className="object-cover w-full h-full transform transition-all duration-500 opacity-30 group-hover:opacity-100 group-hover:brightness-105" 
                     />
                     <div className="overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-70 group-hover:opacity-40 transition-all duration-500" />
                   </div>
@@ -112,7 +112,7 @@ const HeroTiles = ({ images = [], logo = "", menuIcon = null, signInLabel = "SIG
                     <img 
                       src={img(1)} 
                       alt="tile 1" 
-                      className="object-cover w-full h-full transform transition-all duration-500 opacity-60 group-hover:opacity-100 group-hover:brightness-110" 
+                      className="object-cover w-full h-full transform transition-all duration-500 opacity-30 group-hover:opacity-100 group-hover:brightness-105" 
                     />
                     <div className="overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-70 group-hover:opacity-40 transition-all duration-500" />
                   </div>
@@ -124,7 +124,7 @@ const HeroTiles = ({ images = [], logo = "", menuIcon = null, signInLabel = "SIG
                     <img 
                       src={img(4)} 
                       alt="tile 4" 
-                      className="object-cover w-full h-full transform transition-all duration-500 opacity-60 group-hover:opacity-100 group-hover:brightness-110" 
+                      className="object-cover w-full h-full transform transition-all duration-500 opacity-30 group-hover:opacity-100 group-hover:brightness-105" 
                     />
                     <div className="overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-70 group-hover:opacity-40 transition-all duration-500" />
                   </div>
@@ -139,7 +139,7 @@ const HeroTiles = ({ images = [], logo = "", menuIcon = null, signInLabel = "SIG
                     <img 
                       src={img(2)} 
                       alt="tile 2" 
-                      className="object-cover w-full h-full transform transition-all duration-500 opacity-60 group-hover:opacity-100 group-hover:brightness-110" 
+                      className="object-cover w-full h-full transform transition-all duration-500 opacity-30 group-hover:opacity-100 group-hover:brightness-105" 
                     />
                     <div className="overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-70 group-hover:opacity-40 transition-all duration-500" />
                   </div>
@@ -151,7 +151,7 @@ const HeroTiles = ({ images = [], logo = "", menuIcon = null, signInLabel = "SIG
                     <img 
                       src={img(3)} 
                       alt="tile 3" 
-                      className="object-cover w-full h-full transform transition-all duration-500 opacity-60 group-hover:opacity-100 group-hover:brightness-110" 
+                      className="object-cover w-full h-full transform transition-all duration-500 opacity-30 group-hover:opacity-100 group-hover:brightness-105" 
                     />
                     <div className="overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-70 group-hover:opacity-40 transition-all duration-500" />
                   </div>
@@ -163,7 +163,7 @@ const HeroTiles = ({ images = [], logo = "", menuIcon = null, signInLabel = "SIG
                     <img 
                       src={img(5)} 
                       alt="tile 5" 
-                      className="object-cover w-full h-full transform transition-all duration-500 opacity-60 group-hover:opacity-100 group-hover:brightness-110" 
+                      className="object-cover w-full h-full transform transition-all duration-500 opacity-30 group-hover:opacity-100 group-hover:brightness-105" 
                     />
                     <div className="overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-70 group-hover:opacity-40 transition-all duration-500" />
                   </div>
@@ -181,7 +181,7 @@ const HeroTiles = ({ images = [], logo = "", menuIcon = null, signInLabel = "SIG
                     className="object-contain w-[70vw] md:w-[40vw] max-w-[600px] animate-pulse-slow"
                     style={{ 
                       maxHeight: "70vh",
-                      filter: "drop-shadow(0 0 20px rgba(255, 209, 98, 0.3))",
+                      filter: "drop-shadow(0 0 20px rgba(255, 209, 98, 0.5))",
                     }}
                   />
                 ) : (
