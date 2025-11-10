@@ -3,8 +3,8 @@ import { gsap } from "gsap";
 
 function FlowingMenu({ items = [] }) {
   return (
-    <div className="w-full h-full overflow-hidden bg-black text-white">
-      <nav className="flex flex-col h-full m-0 p-0">
+    <div className="w-full h-full bg-black text-white overflow-y-scroll [&::-webkit-scrollbar]:hidden pt-[10vh] lg:pt-0">
+      <nav className="flex flex-col m-0 p-0">
         {items.map((item, idx) => (
           <MenuItem key={idx} {...item} />
         ))}
@@ -63,7 +63,7 @@ function MenuItem({ link, text, hoverText, image1, image2 }) {
 
   const repeatedMarqueeContent = Array.from({ length: 4 }).map((_, idx) => (
     <React.Fragment key={idx}>
-      <span className="uppercase text-[#060010]  text-[3vh] md:text-[4vh] xl:text-[6vh] font-[font2] font-extrabold tracking-normal p-[1vh_1vw_0] leading-[6vh]">
+      <span className="uppercase text-[#060010]  text-[3vh] md:text-[4vh] xl:text-[6vh] font-[font2] font-extrabold tracking-normal p-[1vh_1vw_0] leading-[4vh] lg:leading-[6vh]">
         {hoverText || text}
       </span>
       <div
@@ -76,13 +76,13 @@ function MenuItem({ link, text, hoverText, image1, image2 }) {
   return (
     <div
       ref={itemRef}
-      className="flex-1 relative overflow-hidden text-center border-t  border-white first:border-t-0"
+      className="flex-1 relative overflow-hidden text-center border-t  border-white last:border-b lg:first:border-t-0"
     >
       <a
         href={link}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        className="flex items-center justify-center h-full relative cursor-pointer uppercase no-underline font-[font2] font-extrabold text-[12vh] text-white tracking-wide transition-colors duration-300 hover:text-[#060010]"
+        className="flex items-center justify-center h-full relative cursor-pointer uppercase no-underline font-[font2] font-extrabold text-[6vh] md:text-[8vh] xl:text-[12vh] text-white tracking-wide bg-black transition-colors duration-300 hover:text-[#060010]"
       >
         {text}
       </a>

@@ -1,69 +1,69 @@
-import React, { useState } from 'react';
-import FlowingMenu from './FlowingMenu';
+import React, { useState } from "react";
+import FlowingMenu from "./FlowingMenu";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    { 
-      link: '/', 
-      text: 'Home', 
-      hoverText: 'Back to Home',
-      image1: 'https://picsum.photos/600/400?random=1',
-      image2: 'https://picsum.photos/600/400?random=2'
+    {
+      link: "/",
+      text: "Home",
+      hoverText: "Back to Home",
+      image1: "https://picsum.photos/600/400?random=1",
+      image2: "https://picsum.photos/600/400?random=2",
     },
-    { 
-      link: '/about', 
-      text: 'About', 
-      hoverText: 'Know Us',
-      image1: 'https://picsum.photos/600/400?random=3',
-      image2: 'https://picsum.photos/600/400?random=4'
+    {
+      link: "/about",
+      text: "About",
+      hoverText: "Know Us",
+      image1: "https://picsum.photos/600/400?random=3",
+      image2: "https://picsum.photos/600/400?random=4",
     },
-    { 
-      link: '/events', 
-      text: 'Events', 
-      hoverText: 'What We Do',
-      image1: 'https://picsum.photos/600/400?random=5',
-      image2: 'https://picsum.photos/600/400?random=6'
+    {
+      link: "/events",
+      text: "Events",
+      hoverText: "What We Do",
+      image1: "https://picsum.photos/600/400?random=5",
+      image2: "https://picsum.photos/600/400?random=6",
     },
-    { 
-      link: '/sponsors', 
-      text: 'Sponsors', 
-      hoverText: 'Our Partners',
-      image1: 'https://picsum.photos/600/400?random=7',
-      image2: 'https://picsum.photos/600/400?random=8'
+    {
+      link: "/sponsors",
+      text: "Sponsors",
+      hoverText: "Our Partners",
+      image1: "https://picsum.photos/600/400?random=7",
+      image2: "https://picsum.photos/600/400?random=8",
     },
-    { 
-      link: '/archive', 
-      text: 'Archive', 
-      hoverText: 'Past Memories',
-      image1: 'https://picsum.photos/600/400?random=9',
-      image2: 'https://picsum.photos/600/400?random=10'
+    {
+      link: "/archive",
+      text: "Archive",
+      hoverText: "Past Memories",
+      image1: "https://picsum.photos/600/400?random=9",
+      image2: "https://picsum.photos/600/400?random=10",
     },
-    { 
-      link: '/gallery', 
-      text: 'Gallery', 
-      hoverText: 'View Photos',
-      image1: 'https://picsum.photos/600/400?random=11',
-      image2: 'https://picsum.photos/600/400?random=12'
+    {
+      link: "/gallery",
+      text: "Gallery",
+      hoverText: "View Photos",
+      image1: "https://picsum.photos/600/400?random=11",
+      image2: "https://picsum.photos/600/400?random=12",
     },
-    { 
-      link: '/teams', 
-      text: 'Teams', 
-      hoverText: 'Meet the Team',
-      image1: 'https://picsum.photos/600/400?random=13',
-      image2: 'https://picsum.photos/600/400?random=14'
-    }
+    {
+      link: "/teams",
+      text: "Teams",
+      hoverText: "Meet the Team",
+      image1: "https://picsum.photos/600/400?random=13",
+      image2: "https://picsum.photos/600/400?random=14",
+    },
   ];
 
   return (
     <>
       {/* Main Navbar */}
-      <nav className="sticky top-0 left-0 w-screen z-50 bg-black text-white">
+      <nav className="sticky top-0 left-0 w-full z-50 bg-black text-white">
         <div className="flex justify-between items-center px-5">
           {/* Logo on the left */}
           <div className="w-24 lg:w-32">
-            <img src='./media/ignitia.png'/>
+            <img src="./media/ignitia.png" />
           </div>
 
           {/* Burger Icon on the right */}
@@ -92,7 +92,7 @@ const NavBar = () => {
 
       {/* Full Screen Menu */}
       {isMenuOpen && (
-        <div className="absolute w-full h-full z-40">
+        <div className="fixed top-16 left-0 w-full h-[calc(100vh-4rem)] z-40 overflow-y-auto lg:top-20 lg:h-[calc(100vh-5rem)]">
           <FlowingMenu items={menuItems} />
         </div>
       )}

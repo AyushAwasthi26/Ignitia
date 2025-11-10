@@ -12,7 +12,7 @@ import './index.css'
 
 const App = () => {
   return (
-    <div className='h-screen w-full'>
+    <div className='min-h-screen w-full'>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
