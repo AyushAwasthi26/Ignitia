@@ -198,8 +198,14 @@ function HomeAbout() {
         <div className="max-w-7xl mx-auto">
           {/* Enhanced Section Header with better spacing and typography */}
           <div className="mb-12 md:mb-16">
-            <h2 className="text-[#f0af23] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-[font2] font-extrabold tracking-tight mb-4">
-              About <span className="italic font-[font1]">IGNITIA</span>
+            <h2 className="lg:flex lg:items-center lg:gap-[1vw] gap-[1vw] text-[#f0af23] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-[font2] font-extrabold tracking-tight mb-4">
+              {/* About <span className="italic font-[font1]">IGNITIA</span> */}
+              About{" "}
+              <img
+                src="/media/svgs/ignitia.svg"
+                alt="Ignitia"
+                className="w-[50vw] lg:w-[30vw]"
+              />
             </h2>
             <div className="w-24 sm:w-32 h-1 bg-gradient-to-r from-[#f0af23] to-[#d9bf86]" />
           </div>
@@ -283,7 +289,6 @@ function HomeAbout() {
           </div>
         </div>
       </section>
-
 
       {/* Section 2: Guest Spotlight */}
       <section className="relative min-h-screen w-full bg-black overflow-hidden py-16 md:py-24 px-4 sm:px-6 lg:px-8">
@@ -392,11 +397,16 @@ function HomeAbout() {
         <div className="max-w-7xl mx-auto">
           {/* Enhanced Section Header with better spacing and typography */}
           <div className="mb-12 md:mb-16">
-            <h2 className="text-[#d9bf86] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-[font2] font-extrabold tracking-tight mb-4">
+            <h2 className="xl:flex lg:items-center lg:gap-[1vw] text-[#d9bf86] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-[font2] font-extrabold tracking-tight mb-4">
               Glimpses of{" "}
-              <span className="text-[#f0af23] italic font-[font1]">
+              {/* <span className="text-[#f0af23] italic font-[font1]">
                 Excellence
-              </span>
+              </span> */}
+              <img
+                src="/media/svgs/excellence.svg"
+                alt="Excellence"
+                className="w-[50vw] lg:w-[40vw]"
+              />
             </h2>
             <div className="w-24 sm:w-32 h-1 bg-gradient-to-r from-[#d9bf86] to-[#f0af23]" />
             <p className="text-white/70 text-lg sm:text-xl md:text-2xl font-[font1] mt-6 max-w-2xl leading-relaxed">
@@ -445,7 +455,12 @@ function HomeAbout() {
           <div className="mb-12 md:mb-16 text-right">
             <h2 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-[font2] font-extrabold tracking-tight mb-4">
               Our{" "}
-              <span className="text-[#f0af23] italic font-[font1]">Theme</span>
+              {/* <span className="text-[#f0af23] italic font-[font1]">Theme</span> */}
+              <img
+                src="/media/svgs/Theme.svg"
+                alt="Theme"
+                className="inline-block w-[50vw] lg:w-[20vw] text-[#f0af23] italic font-[font1] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-[font2] font-extrabold tracking-tight mb-4"
+              />
             </h2>
             <div className="w-24 sm:w-32 h-1 bg-gradient-to-l from-[#f0af23] to-[#d9bf86] ml-auto" />
           </div>
@@ -546,8 +561,6 @@ function HomeAbout() {
         </div>
       </section>
 
-      
-
       {/* 3 overlap slides */}
       {/* 💥 Section 5: Overlap Slides - IMPROVED STYLE 💥 */}
       <section>
@@ -560,29 +573,22 @@ function HomeAbout() {
         >
           {/* Card 1: Opto-Réseau */}
           <StyledStickyCard
-            imageSrc="/grid/p1.jpg"
-            altText="Opto-Réseau"
-            subTitle="Featured Segment"
-            title="We see you like no other"
-            url="https://k72.ca/en/work/we-see-you-like-no-other"
+            videoSrc="/Video/bg-idea-footfall.mp4" // You must provide a path to your video file
+            targetNumber={10000} // The number to count up to
+            statisticText="Annual Average Footfall" // The text below the number
+            url="https://example.com/data-report" // Optional: URL to link the card to
           />
-
-          {/* Card 2: Lamajeure */}
           <StyledStickyCard
-            imageSrc="/grid/p2.jpg"
-            altText="Lamajeure"
-            subTitle="Behind the Scenes"
-            title="Lamajeure"
-            url="https://k72.ca/en/work/lamajeure"
+            videoSrc="/Video/dance-bg.mp4" // You must provide a path to your video file
+            targetNumber={100} // The number to count up to
+            statisticText="Performances" // The text below the number
+            url="https://example.com/data-report" // Optional: URL to link the card to
           />
-
-          {/* Card 3: Fruité */}
           <StyledStickyCard
-            imageSrc="/grid/p4.jpg"
-            altText="Lassonde Fruité"
-            subTitle="Creative Showcase"
-            title="Fruité"
-            url="https://k72.ca/en/work/fruite"
+            videoSrc="/Video/bg-idea-disco.mp4" // You must provide a path to your video file
+            targetNumber={50} // The number to count up to
+            statisticText="Exciting Events" // The text below the number
+            url="https://example.com/data-report" // Optional: URL to link the card to
           />
         </div>
       </section>

@@ -11,6 +11,7 @@ import p4 from "/media/home/p4.jpg";
 import p5 from "/media/home/p5.jpg";
 import p6 from "/media/home/p6.jpg";
 import ignitia from "/media/ignitia.png";
+import ignitia2 from "/media/svgs/ignitia.fig.svg";
 
 const Home = () => {
   const images = [p1, p2, p3, p4, p5, p6];
