@@ -63,7 +63,7 @@ function MenuItem({ link, text, hoverText, image1, image2 }) {
 
   const repeatedMarqueeContent = Array.from({ length: 4 }).map((_, idx) => (
     <React.Fragment key={idx}>
-      <span className="uppercase text-[#060010]  text-[3vh] md:text-[4vh] xl:text-[6vh] font-[font2] font-extrabold tracking-normal p-[1vh_1vw_0] leading-[4vh] lg:leading-[6vh]">
+      <span className="uppercase text-[#060010]  text-[3vh] md:text-[4vh] xl:text-[7vh] font-[font2] font-extrabold tracking-normal p-[1vh_1vw_0] leading-[4vh] lg:leading-[7vh]">
         {hoverText || text}
       </span>
       <div
@@ -90,7 +90,7 @@ function MenuItem({ link, text, hoverText, image1, image2 }) {
       {/* Hover Marquee Layer */}
       <div
         ref={marqueeRef}
-        className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none bg-[#d9bf86] translate-y-[101%]"
+        className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none bg-[#ecaf2c] translate-y-[101%]"
       >
         <div ref={marqueeInnerRef} className="h-full w-[200%] flex">
           <div className="flex items-center relative h-full w-[200%] will-change-transform animate-marquee">

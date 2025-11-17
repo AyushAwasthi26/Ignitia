@@ -101,7 +101,7 @@ const AboutText = () => {
 
               <TextType
                 text="Ignitia is PSIT's flagship annual festival—a vibrant celebration where technology meets culture, and students from across the nation come together to compete, collaborate, and create extraordinary experiences."
-                typingSpeed={15}
+                typingSpeed={10}
                 initialDelay={300}
                 showCursor={true}
                 hideCursorAfterTyping={true}
@@ -112,7 +112,7 @@ const AboutText = () => {
               />
               <TextType
                 text="This two-day extravaganza features over 50 diverse events spanning hackathons, robotics competitions, cultural performances, and electrifying concerts. It's where future leaders showcase their talents and push the boundaries of what's possible."
-                typingSpeed={15}
+                typingSpeed={10}
                 initialDelay={300}
                 showCursor={true}
                 hideCursorAfterTyping={true}
@@ -123,7 +123,7 @@ const AboutText = () => {
               />
               <TextType
                 text="From innovative tech challenges to mesmerizing cultural showcases, Ignitia brings together brilliant minds and passionate hearts in a celebration that defines excellence and inspires greatness."
-                typingSpeed={15}
+                typingSpeed={10}
                 initialDelay={300}
                 showCursor={true}
                 hideCursorAfterTyping={true}
@@ -162,7 +162,7 @@ const AboutText = () => {
 
               <TextType
                 text="Abhivirddhi embodies the spirit of continuous evolution and progress. It's a call to embrace lifelong learning, champion innovation, and unlock your unlimited potential as tomorrow's changemaker."
-                typingSpeed={15}
+                typingSpeed={10}
                 initialDelay={500}
                 showCursor={true}
                 hideCursorAfterTyping={true}
@@ -173,7 +173,7 @@ const AboutText = () => {
               />
               <TextType
                 text="This theme celebrates transformation—personal, professional, and societal. It's about breaking boundaries, exploring new frontiers, and building a future where innovation and creativity drive meaningful change."
-                typingSpeed={15}
+                typingSpeed={10}
                 initialDelay={500}
                 showCursor={true}
                 hideCursorAfterTyping={true}
@@ -184,7 +184,7 @@ const AboutText = () => {
               />
               <TextType
                 text=" Join us on this journey of growth and empowerment. Connect with industry leaders, collaborate with fellow visionaries, and be part of an experience that shapes the future."
-                typingSpeed={15}
+                typingSpeed={10}
                 initialDelay={500}
                 showCursor={true}
                 hideCursorAfterTyping={true}
@@ -219,6 +219,7 @@ const AboutText = () => {
         </div>
       </div>
     </section>
+    
   );
 };
 
