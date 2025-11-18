@@ -7,7 +7,7 @@ import Sponsors from './pages/Sponsors'
 import Archive from './pages/Archive'
 import Gallery from './pages/Gallery'
 import Teams from './pages/Teams'
-import Navbar from './components/navbar/Navbar'
+import Navbar from './components/navbar/NavBar'
 import Footer from './components/footer/Footer'
 import './index.css'
 
