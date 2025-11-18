@@ -75,12 +75,23 @@ function MenuItem({ link, text, hoverText, image1, image2, onMenuClose }) {
     </React.Fragment>
   ));
 
+  
+
+  // Function to scroll to top of page
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  // Handle link click - navigate and scroll to top
   const handleClick = () => {
+    scrollToTop();
     if (onMenuClose) {
       onMenuClose();
     }
   };
-
 
   return (
     <div
