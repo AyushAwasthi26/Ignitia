@@ -1,19 +1,21 @@
 import React from "react";
 import { gsap } from "gsap";
+import { Link } from "react-router-dom";
 
-function FlowingMenu({ items = [] }) {
+function FlowingMenu({ items = [], onMenuClose }) {
   return (
     <div className="w-full h-full bg-black text-white overflow-y-scroll [&::-webkit-scrollbar]:hidden pt-[10vh] lg:pt-0">
       <nav className="flex flex-col m-0 p-0">
         {items.map((item, idx) => (
-          <MenuItem key={idx} {...item} />
+          <MenuItem key={idx} {...item} onMenuClose={onMenuClose} />
         ))}
       </nav>
     </div>
   );
 }
 
-function MenuItem({ link, text, hoverText, image1, image2 }) {
+
+function MenuItem({ link, text, hoverText, image1, image2, onMenuClose }) {
   const itemRef = React.useRef(null);
   const marqueeRef = React.useRef(null);
   const marqueeInnerRef = React.useRef(null);
@@ -73,19 +75,27 @@ function MenuItem({ link, text, hoverText, image1, image2 }) {
     </React.Fragment>
   ));
 
+  const handleClick = () => {
+    if (onMenuClose) {
+      onMenuClose();
+    }
+  };
+
+
   return (
     <div
       ref={itemRef}
       className="flex-1 relative overflow-hidden text-center border-t  border-white last:border-b lg:first:border-t-0"
     >
-      <a
-        href={link}
+      <Link
+        to={link}
+        onClick={handleClick}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         className="flex items-center justify-center h-full relative cursor-pointer uppercase no-underline font-[font2] font-extrabold text-[6vh] md:text-[8vh] xl:text-[12vh] text-white tracking-wide bg-black transition-colors duration-300 hover:text-[#060010]"
       >
         {text}
-      </a>
+      </Link>
 
       {/* Hover Marquee Layer */}
       <div

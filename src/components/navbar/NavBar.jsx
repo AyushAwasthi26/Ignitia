@@ -93,7 +93,7 @@ const NavBar = () => {
       {/* Full Screen Menu */}
       {isMenuOpen && (
         <div className="fixed top-16 left-0 w-full h-[calc(100vh-4rem)] z-40 overflow-y-auto lg:top-20 lg:h-[calc(100vh-5rem)]">
-          <FlowingMenu items={menuItems} />
+          <FlowingMenu items={menuItems} onMenuClose={() => setIsMenuOpen(false)} />
         </div>
       )}
     </>
