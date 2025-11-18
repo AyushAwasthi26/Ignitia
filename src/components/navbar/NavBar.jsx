@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import FlowingMenu from "./FlowingMenu";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -56,6 +57,18 @@ const NavBar = () => {
     },
   ];
 
+  // Function to scroll to top of page
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  const handleLinkClick = () => {
+    scrollToTop();
+  };
+
   return (
     <>
       {/* Main Navbar */}
@@ -63,7 +76,12 @@ const NavBar = () => {
         <div className="flex justify-between items-center px-5">
           {/* Logo on the left */}
           <div className="w-24 lg:w-32">
+            <Link
+                      to='/'
+                      onClick={handleLinkClick}
+            >
             <img src="./media/ignitia.png" />
+            </Link>
           </div>
 
           {/* Burger Icon on the right */}
