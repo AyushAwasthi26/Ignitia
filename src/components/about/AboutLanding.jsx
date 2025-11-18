@@ -39,7 +39,7 @@ function AboutLanding() {
           </div>
 
           {/* 2025 (with video component) */}
-          <div className="text-[18vw] text-[#f6e2b6] sm:text-[15vw] justify-center flex items-center align-center uppercase leading-[10vw] sm:leading-[12vw] gap-[1.5vw] mt-[1vw]">
+          <div className="text-[18vw] text-[#f5cc76] sm:text-[15vw] justify-center flex items-center align-center uppercase leading-[10vw] sm:leading-[12vw] gap-[1.5vw] mt-[1vw]">
             2{/* The circular/oval video component for '0' in '2025' */}
             <div className="h-[12vw] w-[40vw] sm:h-[10vw] sm:w-[18vw] md:h-[10vw] md:w-[20vw] lg:h-[10vw] lg:w-[25vw] rounded-full overflow-hidden -mt-[2vw] transform">
               <div className="w-full h-full">
@@ -60,8 +60,7 @@ function AboutLanding() {
           {/* Subtext: Turn up the heat! (Very small and subtle) */}
           {/* Adjusted to be very small, almost blending in, with primary color */}
           <div
-            className="hidden sm:block mt-2 text-sm  md:text-md font-[font2] uppercase tracking-widest space-x-[4vw]"
-            style={{ color: primaryColor }}
+            className="hidden text-[#f1ddb1] sm:block mt-2 text-sm  md:text-md font-[font2] uppercase tracking-widest space-x-[4vw]"
           >
             <span>DANCE</span>
             <span>INNOVATE</span>
@@ -76,7 +75,7 @@ function AboutLanding() {
 
       {/* Small Descriptive Text (Like K72's right side text) */}
       <div className="absolute bottom-[70vh] xl:bottom-[17vh] right-4 sm:right-6 lg:right-8 z-20 pointer-events-none">
-        <p className="text-[#f6e2b6] text-md md:text-sm leading-snug w-[250px] sm:w-[200px] lg:w-[250px] font-[font1] opacity-90">
+        <p className="text-[#f7da9c] text-md md:text-sm leading-snug w-[250px] sm:w-[200px] lg:w-[250px] font-[font1] opacity-90">
           Ignitia 2025 is PSIT's highly anticipated annual techno-cultural fest.
           It's a two-day extravaganza that reflects our commitment to holistic
           student development, offering unique opportunities to showcase

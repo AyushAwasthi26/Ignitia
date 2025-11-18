@@ -67,8 +67,8 @@ const InfiniteCarousel = ({
         {duplicatedImages.map((img, index) => (
           <div
             key={index}
-            className="flex-shrink-0 relative group transition-all duration-300"
-            style={{ width: '320px', height: '450px' }}
+            className="w-[50vw] h-[30vh] md:w-[320px] md:h-[450px] flex-shrink-0 relative group transition-all duration-300"
+            // style={{ width: '320px', height: '450px' }}
           >
             <img
               src={img.src}

@@ -61,7 +61,7 @@ const AboutCelebs = () => {
         </div>
 
         {/* Carousel Rows */}
-        <div className="space-y-12 md:space-y-6">
+        <div className="space-y-1 md:space-y-6">
           {/* Row 1 - Moving Left */}
           <div>
             <InfiniteCarousel

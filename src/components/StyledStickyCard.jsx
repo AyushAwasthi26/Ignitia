@@ -97,7 +97,7 @@ export default function StyledStickyCard({ videoSrc, targetNumber, statisticText
   }, [inViewport]); // Dependency array ensures cleanup runs correctly
 
   return (
-    <div className="sticky font-[font2] top-0 w-full min-h-[80vh] sm:h-screen flex items-center justify-center px-1 sm:px-6 lg:px-8 py-8 bg-black">
+    <div className="sticky font-[font2] top-0 w-full min-h-[80vh] sm:h-screen flex items-center justify-center px-1 sm:px-6 lg:px-8 py-8 bg-black/10">
       <div
         ref={cardRef} // Attach the ref here for IntersectionObserver
         onClick={() => url && window.open(url, '_blank')}
