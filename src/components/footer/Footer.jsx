@@ -139,13 +139,14 @@ const IgnitaFooter = () => {
           </div>
 
           {/* Bottom Section */}
-          <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-8">
             {/* Copyright */}
             <div className="text-gray-400 text-base">
               © 2025 Ignita 2K25 by <span className="text-yellow-400 font-semibold">PSIT</span>. All rights reserved.
             </div>
 
             {/* Back to Top Button */}
+            <div className="flex justify-center">
             <button
               onClick={scrollToTop}
               className="group relative flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-yellow-500 to-orange-500 text-md text-black font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-yellow-500/30"
@@ -153,9 +154,10 @@ const IgnitaFooter = () => {
               <span>Back to Top</span>
               {/* <ChevronUp className="w-5 h-5 group-hover:-translate-y-1 transition-transform duration-300" /> */}
             </button>
+            </div>
 
             {/* Social Icons */}
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-6 md:justify-end justify-center">
               {[
                 { icon: Facebook, href: 'https://www.facebook.com/psitkanpur2004', label: 'Facebook' },
                 { icon: Instagram, href: 'https://www.instagram.com/ignitia.psitkanpur/', label: 'Instagram' },
