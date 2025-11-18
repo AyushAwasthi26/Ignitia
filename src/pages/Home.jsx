@@ -1,6 +1,4 @@
 import React from "react";
-import Threads from "../components/threads";
-import Hyperspeed from "../components/Hyperspeed";
 import HeroTiles from "../components/home/HeroTiles";
 import HomeAbout from "../components/home/HomeAbout";
 
