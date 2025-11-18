@@ -23,5 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
-# Ignore big videos
-public/Video/
+# # Ignore big videos
+# public/Video/
