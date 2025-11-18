@@ -8,6 +8,7 @@ import Archive from './pages/Archive'
 import Gallery from './pages/Gallery'
 import Teams from './pages/Teams'
 import Navbar from './components/navbar/Navbar'
+import Footer from './components/footer/Footer'
 import './index.css'
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/teams" element={<Teams />} />
       </Routes>
+      <Footer />
     </div>
   )
 }
