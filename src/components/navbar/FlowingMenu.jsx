@@ -90,7 +90,7 @@ function MenuItem({ link, text, hoverText, image1, image2 }) {
       {/* Hover Marquee Layer */}
       <div
         ref={marqueeRef}
-        className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none bg-[#ecaf2c] translate-y-[101%]"
+        className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none bg-[#fdd47a] translate-y-[101%]"
       >
         <div ref={marqueeInnerRef} className="h-full w-[200%] flex">
           <div className="flex items-center relative h-full w-[200%] will-change-transform animate-marquee">
