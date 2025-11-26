@@ -20,7 +20,6 @@ const AboutCelebs = () => {
     { src: '/media/cele/c2.jpeg', alt: 'Bhumi Pednekar', title: 'Bhumi Pednekar', subtitle: 'Actress' },
     { src: '/media/cele/c8.jpg', alt: 'Hema Malini', title: 'Hema Malini', subtitle: 'Actress' },
     { src: '/media/cele/c10.jpeg', alt: 'Javed Ali', title: 'Javed Ali', subtitle: 'Singer' },
-    { src: '/media/cele/c21.jpg', alt: 'Shirley Setia', title: 'Shirley Setia', subtitle: 'Singer' },
   ];
 
 
@@ -29,7 +28,6 @@ const AboutCelebs = () => {
     { src: '/media/cele/c15.jpg', alt: 'Manoj Joshi', title: 'Manoj Joshi', subtitle: 'Actor' },
     { src: '/media/cele/c20.jpg', alt: 'Sadhguru', title: 'Sadhguru', subtitle: 'Spiritual Leader' },
     { src: '/media/cele/c17.jpg', alt: 'Nitish Bharadwaj', title: 'Nitish Bharadwaj', subtitle: 'Actor' },
-    { src: '/media/cele/c21.jpg', alt: 'Shirley Setia', title: 'Shirley Setia', subtitle: 'Singer' },
     { src: '/media/cele/c24.jpg', alt: 'Neeti Mohan', title: 'Neeti Mohan', subtitle: 'Singer' },
   ];
 
@@ -37,8 +35,7 @@ const AboutCelebs = () => {
   const row4Images = [
     { src: '/media/cele/c3.jpg', alt: 'Gajendra Verma', title: 'Gajendra Verma', subtitle: 'Singer' },
     { src: '/media/cele/c4.jpg', alt: 'Dr. Kumar Vishwas', title: 'Dr. Kumar Vishwas', subtitle: 'Poet & Speaker' },
-    { src: '/media/cele/c5.jpg', alt: 'Gaur Gopal Das', title: 'Gaur Gopal Das', subtitle: 'Motivational Speaker' },
-    { src: '/media/cele/c17.jpg', alt: 'Nitish Bharadwaj', title: 'Nitish Bharadwaj', subtitle: 'Actor' },
+    { src: '/media/cele/c5.webp', alt: 'Gaur Gopal Das', title: 'Gaur Gopal Das', subtitle: 'Motivational Speaker' },
     { src: '/media/cele/c21.jpg', alt: 'Shirley Setia', title: 'Shirley Setia', subtitle: 'Singer' },
     { src: '/media/cele/c19.jpg', alt: 'Ranvir Shorey', title: 'Ranvir Shorey', subtitle: 'Actor' },
   ];
@@ -53,9 +50,9 @@ const AboutCelebs = () => {
       {/* Grid overlay */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+CiAgPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWxsPSJub25lIi8+CiAgPHBhdGggZD0iTTAgMGg0MHY0MEgweiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDMpIiBzdHJva2Utd2lkdGg9IjEiLz4KPC9zdmc+')] opacity-20 -z-10" />
 
-      <div className="mx-full">
+      <div className="w-full">
         {/* Section Header */}
-        <div className="text-center mb-16 md:mb-24">
+        <div className="text-center mb-16 md:mb-24 mx-auto max-w-6xl">
           <div className="relative inline-block mb-6">
             <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-[font2] font-extrabold text-white leading-tight">
               Celebrity <span className="text-[#f0af23]">Showcase</span>
