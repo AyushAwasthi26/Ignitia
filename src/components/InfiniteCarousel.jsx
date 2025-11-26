@@ -67,13 +67,13 @@ const InfiniteCarousel = ({
         {duplicatedImages.map((img, index) => (
           <div
             key={index}
-            className="w-[50vw] h-[30vh] md:w-[320px] md:h-[450px] flex-shrink-0 relative group transition-all duration-300"
+            className="w-[50vw] h-[40vh] md:w-[320px] md:h-[450px] flex-shrink-0 relative group transition-all duration-300"
             // style={{ width: '320px', height: '450px' }}
           >
             <img
               src={img.src}
               alt={img.alt || 'Celebrity Guest'}
-              className="w-full h-full object-cover rounded-3xl border border-white/20 transition-transform duration-500 group-hover:scale-[1] shadow-sm group-hover:shadow-[0_0_20px_rgba(240,175,35,0.7)]"
+              className="w-full h-full object-cover object-top rounded-3xl border border-white/20 transition-transform duration-500 group-hover:scale-[1] shadow-sm group-hover:shadow-[0_0_20px_rgba(240,175,35,0.7)]"
               draggable="false"
               onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/300x400/1e1e1e/d9bf86?text=Guest+Image"; }}
             />
@@ -84,7 +84,7 @@ const InfiniteCarousel = ({
                 </span>
               )} */}
               {img.title && (
-                <h3 className="text-white font-[font2] text-4xl font-bold leading-10">
+                <h3 className="text-white font-[font2] text-2xl lg:text-4xl font-bold leading-5 lg:leading-10">
                   {img.title}
                 </h3>
               )}

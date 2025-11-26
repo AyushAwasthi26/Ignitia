@@ -5,28 +5,44 @@ import TextType from "../TextType";
 const AboutCelebs = () => {
   // Define celebrity images for different rows
   const row1Images = [
-    { src: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=280&h=350&fit=crop&crop=face', alt: 'Shah Rukh Khan', title: 'Shah Rukh Khan', subtitle: 'Bollywood Actor' },
-    { src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=280&h=350&fit=crop&crop=face', alt: 'A.R. Rahman', title: 'A.R. Rahman', subtitle: 'Music Composer' },
-    { src: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=280&h=350&fit=crop&crop=face', alt: 'Sundar Pichai', title: 'Sundar Pichai', subtitle: 'CEO of Google' },
-    { src: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=280&h=350&fit=crop&crop=face', alt: 'Priyanka Chopra', title: 'Priyanka Chopra', subtitle: 'Global Icon' },
-    { src: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=280&h=350&fit=crop&crop=face', alt: 'Vishal Shekhar', title: 'Vishal Shekhar', subtitle: 'Music Duo' },
+    { src: '/media/cele/c22.jpg', alt: 'Sukhwinder Singh', title: 'Sukhwinder Singh', subtitle: 'Singer' },
+    { src: '/media/cele/c23.jpg', alt: 'Sushant Singh Rajput', title: 'Sushant Singh Rajput', subtitle: 'Bollywood Actor' },
+    { src: '/media/cele/c12.jpg', alt: 'Kailash Kher', title: 'Kailash Kher', subtitle: 'Singer' },
+    { src: '/media/cele/c16.jpg', alt: 'Monali Thakur', title: 'Monali Thakur', subtitle: 'Singer' },
+    { src: '/media/cele/c13.jpg', alt: 'Kirti Kulhari', title: 'Kirti Kulhari', subtitle: 'Actress' },
+    { src: '/media/cele/c14.webp', alt: 'Manav Kaul', title: 'Manav Kaul', subtitle: 'Actor' },
   ];
+
 
   const row2Images = [
-    { src: 'https://images.unsplash.com/photo-1557862921-37829c790f19?w=280&h=350&fit=crop&crop=face', alt: 'Amitabh Bachchan', title: 'Amitabh Bachchan', subtitle: 'Legendary Actor' },
-    { src: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=280&h=350&fit=crop&crop=face', alt: 'Kirron Kher', title: 'Kirron Kher', subtitle: 'Actress & Judge' },
-    { src: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=280&h=350&fit=crop&crop=face', alt: 'Raghav Juyal', title: 'Raghav Juyal', subtitle: 'Dancer & Actor' },
-    { src: 'https://images.unsplash.com/photo-1514222709107-180e6dbd9d29?w=280&h=350&fit=crop&crop=face', alt: 'Nucleya', title: 'Nucleya', subtitle: 'Music Producer' },
-    { src: 'https://images.unsplash.com/photo-1512374382143-06d78e95b7d2?w=280&h=350&fit=crop&crop=face', alt: 'Divine', title: 'Divine', subtitle: 'Rapper' },
+    { src: '/media/cele/c1.jpeg', alt: 'Anupam Kher', title: 'Anupam Kher', subtitle: 'Actor' },
+    { src: '/media/cele/c6.jpeg', alt: 'Hardy Sandhu', title: 'Hardy Sandhu', subtitle: 'Singer & Actor' },
+    { src: '/media/cele/c2.jpeg', alt: 'Bhumi Pednekar', title: 'Bhumi Pednekar', subtitle: 'Actress' },
+    { src: '/media/cele/c8.jpg', alt: 'Hema Malini', title: 'Hema Malini', subtitle: 'Actress' },
+    { src: '/media/cele/c10.jpeg', alt: 'Javed Ali', title: 'Javed Ali', subtitle: 'Singer' },
+    { src: '/media/cele/c21.jpg', alt: 'Shirley Setia', title: 'Shirley Setia', subtitle: 'Singer' },
   ];
 
+
   const row3Images = [
-    { src: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=280&h=350&fit=crop&crop=face', alt: 'Ranveer Singh', title: 'Ranveer Singh', subtitle: 'Bollywood Actor' },
-    { src: 'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=280&h=350&fit=crop&crop=face', alt: 'Kalki Koechlin', title: 'Kalki Koechlin', subtitle: 'Actress' },
-    { src: 'https://images.unsplash.com/photo-1530268729831-4b0b9e170218?w=280&h=350&fit=crop&crop=face', alt: 'Vijay Deverakonda', title: 'Vijay Deverakonda', subtitle: 'Actor' },
-    { src: 'https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=280&h=350&fit=crop&crop=face', alt: 'Badshah', title: 'Badshah', subtitle: 'Rapper' },
-    { src: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=280&h=350&fit=crop&crop=face', alt: 'Shilpa Shetty', title: 'Shilpa Shetty', subtitle: 'Actress' },
+    { src: '/media/cele/c11.jpg', alt: 'John Abraham', title: 'John Abraham', subtitle: 'Actor' },
+    { src: '/media/cele/c15.jpg', alt: 'Manoj Joshi', title: 'Manoj Joshi', subtitle: 'Actor' },
+    { src: '/media/cele/c20.jpg', alt: 'Sadhguru', title: 'Sadhguru', subtitle: 'Spiritual Leader' },
+    { src: '/media/cele/c17.jpg', alt: 'Nitish Bharadwaj', title: 'Nitish Bharadwaj', subtitle: 'Actor' },
+    { src: '/media/cele/c21.jpg', alt: 'Shirley Setia', title: 'Shirley Setia', subtitle: 'Singer' },
+    { src: '/media/cele/c24.jpg', alt: 'Neeti Mohan', title: 'Neeti Mohan', subtitle: 'Singer' },
   ];
+
+
+  const row4Images = [
+    { src: '/media/cele/c3.jpg', alt: 'Gajendra Verma', title: 'Gajendra Verma', subtitle: 'Singer' },
+    { src: '/media/cele/c4.jpg', alt: 'Dr. Kumar Vishwas', title: 'Dr. Kumar Vishwas', subtitle: 'Poet & Speaker' },
+    { src: '/media/cele/c5.jpg', alt: 'Gaur Gopal Das', title: 'Gaur Gopal Das', subtitle: 'Motivational Speaker' },
+    { src: '/media/cele/c17.jpg', alt: 'Nitish Bharadwaj', title: 'Nitish Bharadwaj', subtitle: 'Actor' },
+    { src: '/media/cele/c21.jpg', alt: 'Shirley Setia', title: 'Shirley Setia', subtitle: 'Singer' },
+    { src: '/media/cele/c19.jpg', alt: 'Ranvir Shorey', title: 'Ranvir Shorey', subtitle: 'Actor' },
+  ];
+
 
   return (
     <section className="relative min-h-screen w-full bg-black overflow-hidden py-20 md:py-32 px-4 sm:px-6 lg:px-8">
@@ -37,7 +53,7 @@ const AboutCelebs = () => {
       {/* Grid overlay */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+CiAgPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWxsPSJub25lIi8+CiAgPHBhdGggZD0iTTAgMGg0MHY0MEgweiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDMpIiBzdHJva2Utd2lkdGg9IjEiLz4KPC9zdmc+')] opacity-20 -z-10" />
 
-      <div className="max-w-7xl mx-auto">
+      <div className="mx-full">
         {/* Section Header */}
         <div className="text-center mb-16 md:mb-24">
           <div className="relative inline-block mb-6">
@@ -67,7 +83,7 @@ const AboutCelebs = () => {
             <InfiniteCarousel
               images={row1Images}
               direction="left"
-              speed={3}
+              speed={2}
               gap={20}
             />
           </div>
@@ -77,7 +93,7 @@ const AboutCelebs = () => {
             <InfiniteCarousel
               images={row2Images}
               direction="right"
-              speed={2}
+              speed={2.5}
               gap={20}
             />
           </div>
@@ -87,7 +103,17 @@ const AboutCelebs = () => {
             <InfiniteCarousel
               images={row3Images}
               direction="left"
-              speed={3}
+              speed={2}
+              gap={20}
+            />
+          </div>
+
+          {/* Row 4 - Moving Right */}
+          <div>
+            <InfiniteCarousel
+              images={row4Images}
+              direction="right"
+              speed={2.5}
               gap={20}
             />
           </div>
