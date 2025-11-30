@@ -61,7 +61,7 @@ const NavBar = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: 'instant'
     });
   };
 
@@ -77,8 +77,8 @@ const NavBar = () => {
           {/* Logo on the left */}
           <div className="w-24 lg:w-32">
             <Link
-                      to='/'
-                      onClick={handleLinkClick}
+              to='/'
+              onClick={handleLinkClick}
             >
             <img src="./media/ignitia.png" />
             </Link>

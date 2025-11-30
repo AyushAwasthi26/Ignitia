@@ -17,7 +17,7 @@ const NumberCounter = ({ target, startCounting }) => {
 
     let startTimestamp;
     // Animation duration in milliseconds
-    const duration = 5000; 
+    const duration = 3000; 
 
     // The animation frame function
     const step = (timestamp) => {
@@ -51,7 +51,7 @@ const NumberCounter = ({ target, startCounting }) => {
   const formattedCount = count.toLocaleString();
 
   return (
-    <span className="text-8xl sm:text-9xl font-extrabold text-[#f0af23] tracking-tighter transition-all duration-1000 drop-shadow-[0_0_15px_rgba(240,175,35,0.5)]">
+    <span className="text-8xl sm:text-[25vh] font-extrabold text-[#f0af23] tracking-tighter transition-all duration-1000 drop-shadow-[0_0_15px_rgba(240,175,35,0.5)]">
       {formattedCount}
     </span>
   );
@@ -131,7 +131,7 @@ export default function StyledStickyCard({ videoSrc, targetNumber, statisticText
           </div>
 
           {/* Optional Call to Action (Only shows if URL is provided) */}
-          {url && (
+          {/* {url && (
             <div className="mt-12 group">
               <div className="px-8 py-3 bg-transparent backdrop-blur-sm border border-[#f0af23]/50 text-[#f0af23] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 group-hover:bg-[#f0af23] group-hover:text-black group-hover:shadow-lg group-hover:shadow-[#f0af23]/30 flex items-center">
                 Explore The Data
@@ -140,7 +140,7 @@ export default function StyledStickyCard({ videoSrc, targetNumber, statisticText
                 </svg>
               </div>
             </div>
-          )}
+          )} */}
         </div>
       </div>
     </div>

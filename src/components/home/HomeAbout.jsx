@@ -35,7 +35,7 @@ const items = [
   },
   {
     id: "5",
-    img: "/grid/imgi_65_image.webp",
+    img: "/grid/p16.webp",
     height: 450,
   },
   {
@@ -486,13 +486,13 @@ function HomeAbout() {
                 <div className="absolute -right-4 sm:-right-6 top-0 w-1 h-full bg-gradient-to-b from-[#f0af23] via-[#d9bf86] to-transparent" />
 
                 {/* Enhanced Theme Title/Logo with better alignment and spacing */}
-                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-6">
+                <div className="flex flex-col items-start mb-6">
                   <img
-                    src="/media/theme_abhivirddhi_logo.png"
+                    src="/media/theme.webp"
                     alt="Abhivirddhi"
-                    className="h-16 md:h-24 w-auto"
+                    className="h-16 md:h-34 w-auto"
                   />
-                  <p className="text-white text-2xl sm:text-3xl md:text-4xl font-[font2] leading-tight">
+                  <p className="text-white text-2xl sm:text-3xl md:text-xl font-[font2] leading-tight">
                     <span className="text-[#d9bf86] block sm:inline">
                       cultivating growth,
                     </span>{" "}

@@ -73,11 +73,11 @@ const InfiniteCarousel = ({
             <img
               src={img.src}
               alt={img.alt || 'Celebrity Guest'}
-              className="w-full h-full object-cover object-top rounded-3xl border border-white/20 transition-transform duration-500 group-hover:scale-[1] shadow-sm group-hover:shadow-[0_0_20px_rgba(240,175,35,0.7)]"
+              className="w-full h-full object-cover object-top rounded-3xl border border-white/20 transition-transform duration-500 md:group-hover:scale-[1.02] shadow-sm group-hover:shadow-[0_0_15px_rgba(240,175,35,0.7)]"
               draggable="false"
               onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/300x400/1e1e1e/d9bf86?text=Guest+Image"; }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-100 transition-all duration-500 rounded-3xl flex flex-col justify-end p-6">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-100 transition-all md:group-hover:scale-[1.02] duration-500 rounded-3xl flex flex-col justify-end p-6">
               {/* {img.year && (
                 <span className="text-[#f0af23] font-[font2] text-sm uppercase mb-1 tracking-wider">
                   {img.year}
