@@ -101,36 +101,36 @@ const AboutText = () => {
 
               <TextType
                 text="Ignitia is PSIT's flagship annual festival—a vibrant celebration where technology meets culture, and students from across the nation come together to compete, collaborate, and create extraordinary experiences."
-                typingSpeed={10}
-                initialDelay={300}
+                typingSpeed={2}
+                initialDelay={100}
                 showCursor={true}
                 hideCursorAfterTyping={true}
                 cursorCharacter="|"
                 cursorClassName="text-[#f0af23]"
                 as="p"
-                className="text-white/90 text-lg sm:text-xl md:text-2xl leading-relaxed font-[font1] mb-6"
+                className="text-white/90 text-lg sm:text-xl md:text-xl leading-normal font-[font1] mb-6"
               />
               <TextType
                 text="This two-day extravaganza features over 50 diverse events spanning hackathons, robotics competitions, cultural performances, and electrifying concerts. It's where future leaders showcase their talents and push the boundaries of what's possible."
-                typingSpeed={10}
-                initialDelay={300}
+                typingSpeed={2}
+                initialDelay={100}
                 showCursor={true}
                 hideCursorAfterTyping={true}
                 cursorCharacter="|"
                 cursorClassName="text-[#f0af23]"
                 as="p"
-                className="text-white/90 text-lg sm:text-xl md:text-2xl leading-relaxed font-[font1] mb-6"
+                className="text-white/90 text-lg sm:text-xl md:text-2xl leading-normal font-[font1] mb-6"
               />
               <TextType
                 text="From innovative tech challenges to mesmerizing cultural showcases, Ignitia brings together brilliant minds and passionate hearts in a celebration that defines excellence and inspires greatness."
-                typingSpeed={10}
-                initialDelay={300}
+                typingSpeed={2}
+                initialDelay={100}
                 showCursor={true}
                 hideCursorAfterTyping={true}
                 cursorCharacter="|"
                 cursorClassName="text-[#f0af23]"
                 as="p"
-                className="text-white/90 text-lg sm:text-xl md:text-2xl leading-relaxed font-[font1] mb-6"
+                className="text-white/90 text-lg sm:text-xl md:text-2xl leading-normal font-[font1] mb-6"
               />
             </div>
           </div>
@@ -146,9 +146,9 @@ const AboutText = () => {
 
               <div className="flex items-center gap-3 mb-6">
                 <img
-                  src="/media/theme_abhivirddhi_logo.png"
+                  src="/media/theme.webp"
                   alt="Abhivirddhi"
-                  className="h-12 md:h-16 w-auto"
+                  className="h-12 md:h-26 w-auto"
                 />
                 <span className="text-[#d9bf86] font-[font2] text-xl sm:text-2xl font-bold">
                   Theme 2025: Abhivirddhi
@@ -162,36 +162,36 @@ const AboutText = () => {
 
               <TextType
                 text="Abhivirddhi embodies the spirit of continuous evolution and progress. It's a call to embrace lifelong learning, champion innovation, and unlock your unlimited potential as tomorrow's changemaker."
-                typingSpeed={10}
-                initialDelay={500}
+                typingSpeed={2}
+                initialDelay={100}
                 showCursor={true}
                 hideCursorAfterTyping={true}
                 cursorCharacter="|"
                 cursorClassName="text-[#d9bf86]"
                 as="p"
-                className="text-white/90 text-lg sm:text-xl md:text-2xl leading-relaxed font-[font1] mb-6"
+                className="text-white/90 text-lg sm:text-xl md:text-2xl leading-normal font-[font1] mb-6"
               />
               <TextType
                 text="This theme celebrates transformation—personal, professional, and societal. It's about breaking boundaries, exploring new frontiers, and building a future where innovation and creativity drive meaningful change."
-                typingSpeed={10}
-                initialDelay={500}
+                typingSpeed={2}
+                initialDelay={100}
                 showCursor={true}
                 hideCursorAfterTyping={true}
                 cursorCharacter="|"
                 cursorClassName="text-[#d9bf86]"
                 as="p"
-                className="text-white/90 text-lg sm:text-xl md:text-2xl leading-relaxed font-[font1] mb-6"
+                className="text-white/90 text-lg sm:text-xl md:text-2xl leading-normal font-[font1] mb-6"
               />
               <TextType
                 text=" Join us on this journey of growth and empowerment. Connect with industry leaders, collaborate with fellow visionaries, and be part of an experience that shapes the future."
-                typingSpeed={10}
-                initialDelay={500}
+                typingSpeed={2}
+                initialDelay={100}
                 showCursor={true}
                 hideCursorAfterTyping={true}
                 cursorCharacter="|"
                 cursorClassName="text-[#d9bf86]"
                 as="p"
-                className="text-white/90 text-lg sm:text-xl md:text-2xl leading-relaxed font-[font1] mb-6"
+                className="text-white/90 text-lg sm:text-xl md:text-2xl leading-normal font-[font1] mb-6"
               />
 
               
