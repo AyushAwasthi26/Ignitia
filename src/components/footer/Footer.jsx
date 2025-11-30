@@ -1,13 +1,20 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Linkedin, Twitter, Youtube, ChevronUp} from 'lucide-react';
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  Twitter,
+  Youtube,
+  ChevronUp,
+} from "lucide-react";
 
 const IgnitaFooter = () => {
   // Function to scroll to top of page
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'instant'
+      behavior: "instant",
     });
   };
 
@@ -32,10 +39,10 @@ const IgnitaFooter = () => {
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/0 to-black/20"></div>
       </div>
-      
+
       {/* Animated Gradient Border Top */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-500 animate-pulse"></div>
-      
+
       {/* Content */}
       <div className="relative z-10 px-6 py-16 md:py-20">
         <div className="max-w-7xl mx-auto">
@@ -43,16 +50,19 @@ const IgnitaFooter = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
             {/* Logo and Tagline */}
             <div className="md:col-span-1 space-y-6">
-              <Link 
+              <Link
                 to="/"
                 onClick={handleLinkClick}
                 className="w-40 h-40 relative group cursor-pointer block"
               >
                 <div className="relative bg-black/50 backdrop-blur-sm rounded-full p-6 border border-yellow-500/30 flex items-center justify-center">
                   {/* Ignita Logo SVG */}
-                  
-                    <img src='/media/ignitia.png' alt="Ignitia Logo" className="w-full h-full" />
-                 
+
+                  <img
+                    src="/media/ignitia.png"
+                    alt="Ignitia Logo"
+                    className="w-full h-full"
+                  />
                 </div>
               </Link>
               {/* <p className="text-gray-300 text-md leading-relaxed">
@@ -62,13 +72,15 @@ const IgnitaFooter = () => {
 
             {/* Quick Links */}
             <div>
-              <h3 className="text-yellow-400 font-bold text-xl mb-6 tracking-wide">Quick Links</h3>
+              <h3 className="text-yellow-400 font-bold text-xl mb-6 tracking-wide">
+                Quick Links
+              </h3>
               <ul className="space-y-4">
                 {[
-                  { name: 'Home', path: '/' },
-                  { name: 'About', path: '/about' },
-                  { name: 'Teams', path: '/teams' },
-                  { name: 'Events', path: '/events' }
+                  { name: "Home", path: "/" },
+                  { name: "About", path: "/about" },
+                  { name: "Teams", path: "/teams" },
+                  { name: "Events", path: "/events" },
                 ].map((link) => (
                   <li key={link.name}>
                     <Link
@@ -85,12 +97,14 @@ const IgnitaFooter = () => {
 
             {/* Explore More */}
             <div>
-              <h3 className="text-yellow-400 font-bold text-xl mb-6 tracking-wide">Explore More</h3>
+              <h3 className="text-yellow-400 font-bold text-xl mb-6 tracking-wide">
+                Explore More
+              </h3>
               <ul className="space-y-4">
                 {[
-                  { name: 'Gallery', path: '/gallery' },
-                  { name: 'Sponsors', path: '/sponsors' },
-                  { name: 'Archive', path: '/archive' }
+                  { name: "Gallery", path: "/gallery" },
+                  { name: "Sponsors", path: "/sponsors" },
+                  { name: "Archive", path: "/archive" },
                 ].map((link) => (
                   <li key={link.name}>
                     <Link
@@ -107,12 +121,14 @@ const IgnitaFooter = () => {
 
             {/* Support */}
             <div>
-              <h3 className="text-yellow-400 font-bold text-xl mb-6 tracking-wide">Support</h3>
+              <h3 className="text-yellow-400 font-bold text-xl mb-6 tracking-wide">
+                Support
+              </h3>
               <ul className="space-y-4">
                 {[
-                  { name: 'Privacy Policy', path: '/privacy' },
-                  { name: 'Terms & Conditions', path: '/terms' },
-                  { name: 'FAQs', path: '/faqs' }
+                  { name: "Privacy Policy", path: "/privacy" },
+                  { name: "Terms & Conditions", path: "/terms" },
+                  { name: "FAQs", path: "/faqs" },
                 ].map((link) => (
                   <li key={link.name}>
                     <Link
@@ -142,28 +158,55 @@ const IgnitaFooter = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-8">
             {/* Copyright */}
             <div className="text-gray-400 text-base">
-              © 2025 Ignita 2K25 by <span className="text-yellow-400 font-semibold">PSIT</span>. All rights reserved.
+              © 2025 Ignita 2K25 by{" "}
+              <span className="text-yellow-400 font-semibold">PSIT</span>. All
+              rights reserved.
             </div>
 
             {/* Back to Top Button */}
             <div className="flex justify-center">
-            <button
-              onClick={scrollToTop}
-              className="group relative flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-yellow-500 to-orange-500 text-md text-black font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-yellow-500/30"
-            >
-              <span>Back to Top</span>
-              {/* <ChevronUp className="w-5 h-5 group-hover:-translate-y-1 transition-transform duration-300" /> */}
-            </button>
+              <button
+                onClick={() => {
+                  window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                  });
+                }}
+                className="group relative flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-yellow-500 to-orange-500 text-md text-black font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-yellow-500/30"
+              >
+                <span>Back to Top</span>
+                {/* <ChevronUp className="w-5 h-5 group-hover:-translate-y-1 transition-transform duration-300" /> */}
+              </button>
             </div>
 
             {/* Social Icons */}
             <div className="flex items-center gap-6 md:justify-end justify-center">
               {[
-                { icon: Facebook, href: 'https://www.facebook.com/psitkanpur2004', label: 'Facebook' },
-                { icon: Instagram, href: 'https://www.instagram.com/ignitia.psitkanpur/', label: 'Instagram' },
-                { icon: Linkedin, href: 'https://www.linkedin.com/school/psitkanpur/posts/?feedView=all', label: 'LinkedIn' },
-                { icon: Twitter, href: 'https://x.com/PSITKanpur2004', label: 'Twitter' },
-                { icon: Youtube, href: 'https://www.youtube.com/@psitkanpur', label: 'YouTube' }
+                {
+                  icon: Facebook,
+                  href: "https://www.facebook.com/psitkanpur2004",
+                  label: "Facebook",
+                },
+                {
+                  icon: Instagram,
+                  href: "https://www.instagram.com/ignitia.psitkanpur/",
+                  label: "Instagram",
+                },
+                {
+                  icon: Linkedin,
+                  href: "https://www.linkedin.com/school/psitkanpur/posts/?feedView=all",
+                  label: "LinkedIn",
+                },
+                {
+                  icon: Twitter,
+                  href: "https://x.com/PSITKanpur2004",
+                  label: "Twitter",
+                },
+                {
+                  icon: Youtube,
+                  href: "https://www.youtube.com/@psitkanpur",
+                  label: "YouTube",
+                },
               ].map(({ icon: Icon, href, label }) => (
                 <a
                   key={label}
