@@ -1,8 +1,8 @@
 import React from 'react'
-
+import EventsPage from '@/components/events/EventsPage'
 const Events = () => {
   return (
-    <div>Events</div>
+    <EventsPage/>
   )
 }
 
