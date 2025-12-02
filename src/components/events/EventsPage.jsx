@@ -6,552 +6,599 @@ const eventsData = [
   // ==================================================================================
   // DAY 1: 25TH MARCH (1 Event)
   // ==================================================================================
-  { 
-    id: 1, 
-    name: "Scholar Of The Year 2.0", 
-    club: "IEEE & Computer Society", 
-    category: "Aptitude", 
-    poster: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80", 
-    date: "25 March", 
-    time: "11:00 AM - 12:35 PM", 
-    location: "AA-14", 
-    coordinator: "Dr. Aparna Dixit", 
-    fee: 0, 
-    prize: "50,000", 
-    description: "The ultimate aptitude and idea pitching battle. Vie for the title of Scholar of the Year.", 
-    day: "25" 
+  {
+    id: 1,
+    name: "Scholar Of The Year 2.0",
+    club: "IEEE & Computer Society",
+    category: "Aptitude",
+    poster:
+      "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80",
+    date: "25 March",
+    time: "11:00 AM - 12:35 PM",
+    location: "AA-14",
+    coordinator: "Dr. Aparna Dixit",
+    fee: 0,
+    prize: "50,000",
+    description:
+      "The ultimate aptitude and idea pitching battle. Vie for the title of Scholar of the Year.",
+    day: "25",
   },
 
   // ==================================================================================
   // DAY 2: 28TH MARCH (34 Events)
   // ==================================================================================
-  
+
   // --- IMAGE 1: IT, CSE, Google Dev, BBA ---
-  { 
-    id: 101, 
-    name: "Red Light, Build Right", 
-    club: "IT Department", 
-    category: "Technical", 
-    poster: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "11:00 AM - 01:00 PM", 
-    location: "L-33, L-34", 
-    coordinator: "Akshat Trivedi", 
-    fee: 200, 
-    prize: "3,000", 
-    description: "IoT Assembly Challenge. Assemble your way to victory in this Squid Game themed tech event.", 
-    day: "28" 
+  {
+    id: 101,
+    name: "Red Light, Build Right",
+    club: "IT Department",
+    category: "Technical",
+    poster:
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "11:00 AM - 01:00 PM",
+    location: "L-33, L-34",
+    coordinator: "Akshat Trivedi",
+    fee: 200,
+    prize: "3,000",
+    description:
+      "IoT Assembly Challenge. Assemble your way to victory in this Squid Game themed tech event.",
+    day: "28",
   },
-  { 
-    id: 102, 
-    name: "Code & Stack", 
-    club: "CSE Department", 
-    category: "Coding", 
-    poster: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "11:00 AM - 01:00 PM", 
-    location: "D-33, D-34", 
-    coordinator: "Bhoomi Gupta", 
-    fee: 200, 
-    prize: "5,000", 
-    description: "Tech + Skill Based Challenge. 2-3 Members per team.", 
-    day: "28" 
+  {
+    id: 102,
+    name: "Code & Stack",
+    club: "CSE Department",
+    category: "Coding",
+    poster:
+      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "11:00 AM - 01:00 PM",
+    location: "D-33, D-34",
+    coordinator: "Bhoomi Gupta",
+    fee: 200,
+    prize: "5,000",
+    description: "Tech + Skill Based Challenge. 2-3 Members per team.",
+    day: "28",
   },
-  { 
-    id: 103, 
-    name: "Misfit Melodies", 
-    club: "Google Dev Groups", 
-    category: "Fun", 
-    poster: "https://images.unsplash.com/photo-1516280440614-6697288d5d38?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "10:45 AM - 12:45 PM", 
-    location: "C-31, C-32", 
-    coordinator: "Harsh Verdhan Singh", 
-    fee: 149, 
-    prize: "5,000", 
-    description: "AI Karaoke with a tech twist. Sing popular songs with an AI challenge.", 
-    day: "28" 
+  {
+    id: 103,
+    name: "Misfit Melodies",
+    club: "Google Dev Groups",
+    category: "Fun",
+    poster:
+      "https://images.unsplash.com/photo-1516280440614-6697288d5d38?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "10:45 AM - 12:45 PM",
+    location: "C-31, C-32",
+    coordinator: "Harsh Verdhan Singh",
+    fee: 149,
+    prize: "5,000",
+    description:
+      "AI Karaoke with a tech twist. Sing popular songs with an AI challenge.",
+    day: "28",
   },
-  { 
-    id: 104, 
-    name: "Reimagine, Recycle, Redesign", 
-    club: "Dept of Business Admin", 
-    category: "Creative", 
-    poster: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "10:00 AM - 12:00 PM", 
-    location: "J-22", 
-    coordinator: "Harsh Yadav", 
-    fee: 149, 
-    prize: "Pool Prizes", 
-    description: "Create original crafts using only recycled materials. 3 members per team.", 
-    day: "28" 
+  {
+    id: 104,
+    name: "Reimagine, Recycle, Redesign",
+    club: "Dept of Business Admin",
+    category: "Creative",
+    poster:
+      "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "10:00 AM - 12:00 PM",
+    location: "J-22",
+    coordinator: "Harsh Yadav",
+    fee: 149,
+    prize: "Pool Prizes",
+    description:
+      "Create original crafts using only recycled materials. 3 members per team.",
+    day: "28",
   },
 
   // --- IMAGE 2: MMUN & Fun Games ---
-  { 
-    id: 105, 
-    name: "Mini Model United Nations", 
-    club: "Debate Club", 
-    category: "Literary", 
-    poster: "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "11:00 AM - 02:00 PM", 
-    location: "P-11, P-12, P-13", 
-    coordinator: "Aditya Shukla", 
-    fee: 199, 
-    prize: "6,000", 
-    description: "Debate, Negotiate, Compete, Win! A simulation of the UN.", 
-    day: "28" 
+  {
+    id: 105,
+    name: "Mini Model United Nations",
+    club: "Debate Club",
+    category: "Literary",
+    poster:
+      "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "11:00 AM - 02:00 PM",
+    location: "P-11, P-12, P-13",
+    coordinator: "Aditya Shukla",
+    fee: 199,
+    prize: "6,000",
+    description: "Debate, Negotiate, Compete, Win! A simulation of the UN.",
+    day: "28",
   },
-  { 
-    id: 106, 
-    name: "Pop Back Challenge", 
-    club: "Fun Club", 
-    category: "Fun Game", 
-    poster: "https://images.unsplash.com/photo-1514525253440-b39345208668?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "10:00 AM - 02:00 PM", 
-    location: "R Block Open Ground", 
-    coordinator: "Sneha Tandon", 
-    fee: 20, 
-    prize: "Goodies", 
-    description: "A fun balloon-popping challenge.", 
-    day: "28" 
+  {
+    id: 106,
+    name: "Pop Back Challenge",
+    club: "Fun Club",
+    category: "Fun Game",
+    poster:
+      "https://images.unsplash.com/photo-1514525253440-b39345208668?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "10:00 AM - 02:00 PM",
+    location: "R Block Open Ground",
+    coordinator: "Sneha Tandon",
+    fee: 20,
+    prize: "Goodies",
+    description: "A fun balloon-popping challenge.",
+    day: "28",
   },
-  { 
-    id: 107, 
-    name: "Pyramid Puff", 
-    club: "Fun Club", 
-    category: "Fun Game", 
-    poster: "https://images.unsplash.com/photo-1611371805429-8a35639b7d8b?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "10:00 AM - 02:00 PM", 
-    location: "R Block Open Ground", 
-    coordinator: "Sneha Tandon", 
-    fee: 20, 
-    prize: "Goodies", 
-    description: "Stack the cups, blow them down! Precision and breath control.", 
-    day: "28" 
+  {
+    id: 107,
+    name: "Pyramid Puff",
+    club: "Fun Club",
+    category: "Fun Game",
+    poster:
+      "https://images.unsplash.com/photo-1611371805429-8a35639b7d8b?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "10:00 AM - 02:00 PM",
+    location: "R Block Open Ground",
+    coordinator: "Sneha Tandon",
+    fee: 20,
+    prize: "Goodies",
+    description:
+      "Stack the cups, blow them down! Precision and breath control.",
+    day: "28",
   },
-  { 
-    id: 108, 
-    name: "Ring Rumbble", 
-    club: "Fun Club", 
-    category: "Fun Game", 
-    poster: "https://images.unsplash.com/photo-1531844251246-9a1bfaaeeb9a?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "10:00 AM - 02:00 PM", 
-    location: "R Block Open Ground", 
-    coordinator: "Sneha Tandon", 
-    fee: 20, 
-    prize: "Goodies", 
-    description: "Toss the ring and claim your victory.", 
-    day: "28" 
+  {
+    id: 108,
+    name: "Ring Rumbble",
+    club: "Fun Club",
+    category: "Fun Game",
+    poster:
+      "https://images.unsplash.com/photo-1531844251246-9a1bfaaeeb9a?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "10:00 AM - 02:00 PM",
+    location: "R Block Open Ground",
+    coordinator: "Sneha Tandon",
+    fee: 20,
+    prize: "Goodies",
+    description: "Toss the ring and claim your victory.",
+    day: "28",
   },
 
   // --- IMAGE 3: Robotics, VR, Creative ---
-  { 
-    id: 109, 
-    name: "Robo-Sumo + Robo Soccer", 
-    club: "Robotics Club", 
-    category: "Robotics", 
-    poster: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "10:15 AM - 02:00 PM", 
-    location: "Girls Basketball Ground", 
-    coordinator: "Siddhi Sharma", 
-    fee: 999, 
-    prize: "8,000", 
-    description: "Race. Conquer. Dominate. The ultimate combo of Sumo and Soccer bots.", 
-    day: "28" 
+  {
+    id: 109,
+    name: "Robo-Sumo + Robo Soccer",
+    club: "Robotics Club",
+    category: "Robotics",
+    poster:
+      "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "10:15 AM - 02:00 PM",
+    location: "Girls Basketball Ground",
+    coordinator: "Siddhi Sharma",
+    fee: 999,
+    prize: "8,000",
+    description:
+      "Race. Conquer. Dominate. The ultimate combo of Sumo and Soccer bots.",
+    day: "28",
   },
-  { 
-    id: 110, 
-    name: "VR Workshop & Game", 
-    club: "IEEE", 
-    category: "Workshop", 
-    poster: "https://images.unsplash.com/photo-1622979135228-4b95088f17a5?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "11:00 AM - 02:00 PM", 
-    location: "AA-24", 
-    coordinator: "Anmol Deep Singh", 
-    fee: 150, 
-    prize: "2,500", 
-    description: "Immersive horizons. Experience Virtual Reality like never before.", 
-    day: "28" 
+  {
+    id: 110,
+    name: "VR Workshop & Game",
+    club: "IEEE",
+    category: "Workshop",
+    poster:
+      "https://images.unsplash.com/photo-1622979135228-4b95088f17a5?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "11:00 AM - 02:00 PM",
+    location: "AA-24",
+    coordinator: "Anmol Deep Singh",
+    fee: 150,
+    prize: "2,500",
+    description:
+      "Immersive horizons. Experience Virtual Reality like never before.",
+    day: "28",
   },
-  { 
-    id: 111, 
-    name: "Brand-S-Mash", 
-    club: "Creative Cell", 
-    category: "Creative", 
-    poster: "https://images.unsplash.com/photo-1626785774573-4b79931251bc?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "01:00 PM - 02:00 PM", 
-    location: "K-14", 
-    coordinator: "Arya Jaiswal", 
-    fee: 149, 
-    prize: "2,500", 
-    description: "Creative Idea competition. Mashup brands and create something new.", 
-    day: "28" 
+  {
+    id: 111,
+    name: "Brand-S-Mash",
+    club: "Creative Cell",
+    category: "Creative",
+    poster:
+      "https://images.unsplash.com/photo-1626785774573-4b79931251bc?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "01:00 PM - 02:00 PM",
+    location: "K-14",
+    coordinator: "Arya Jaiswal",
+    fee: 149,
+    prize: "2,500",
+    description:
+      "Creative Idea competition. Mashup brands and create something new.",
+    day: "28",
   },
-  { 
-    id: 112, 
-    name: "Value Poster Campaign", 
-    club: "PSIT CHE", 
-    category: "Art", 
-    poster: "https://images.unsplash.com/photo-1561525140-c2a4cc68e4bd?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "11:00 AM - 01:00 PM", 
-    location: "Room-109 (CHE)", 
-    coordinator: "Harsh Kumar Singh", 
-    fee: 149, 
-    prize: "2,000", 
-    description: "Express values through art in this poster making campaign.", 
-    day: "28" 
+  {
+    id: 112,
+    name: "Value Poster Campaign",
+    club: "PSIT CHE",
+    category: "Art",
+    poster:
+      "https://images.unsplash.com/photo-1561525140-c2a4cc68e4bd?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "11:00 AM - 01:00 PM",
+    location: "Room-109 (CHE)",
+    coordinator: "Harsh Kumar Singh",
+    fee: 149,
+    prize: "2,000",
+    description: "Express values through art in this poster making campaign.",
+    day: "28",
   },
 
   // --- IMAGE 5: Corporate, Theatre, Data Science ---
-  { 
-    id: 113, 
-    name: "The Corporate Conquest", 
-    club: "BBA Department", 
-    category: "Business", 
-    poster: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "11:00 AM - 01:00 PM", 
-    location: "Room 111 (CHE)", 
-    coordinator: "Saniya Verma", 
-    fee: 150, 
-    prize: "Gift Hampers", 
-    description: "A business simulation event for aspiring corporate leaders.", 
-    day: "28" 
+  {
+    id: 113,
+    name: "The Corporate Conquest",
+    club: "BBA Department",
+    category: "Business",
+    poster:
+      "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "11:00 AM - 01:00 PM",
+    location: "Room 111 (CHE)",
+    coordinator: "Saniya Verma",
+    fee: 150,
+    prize: "Gift Hampers",
+    description: "A business simulation event for aspiring corporate leaders.",
+    day: "28",
   },
-  { 
-    id: 114, 
-    name: "Rang Shikhar", 
-    club: "Theatre Club", 
-    category: "Cultural", 
-    poster: "https://images.unsplash.com/photo-1503095392237-59595e0a700e?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "11:00 AM - 01:00 PM", 
-    location: "G-37", 
-    coordinator: "Shiven Gupta", 
-    fee: 149, 
-    prize: "1,000", 
-    description: "Pinnacle of Theatre. Mental Health Awareness theme.", 
-    day: "28" 
+  {
+    id: 114,
+    name: "Rang Shikhar",
+    club: "Theatre Club",
+    category: "Cultural",
+    poster:
+      "https://images.unsplash.com/photo-1503095392237-59595e0a700e?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "11:00 AM - 01:00 PM",
+    location: "G-37",
+    coordinator: "Shiven Gupta",
+    fee: 149,
+    prize: "1,000",
+    description: "Pinnacle of Theatre. Mental Health Awareness theme.",
+    day: "28",
   },
-  { 
-    id: 115, 
-    name: "Predict-O-Bingo", 
-    club: "Data Science Dept", 
-    category: "Technical", 
-    poster: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "11:30 AM - 01:00 PM", 
-    location: "D-21, D-22", 
-    coordinator: "Taiba Khatoon", 
-    fee: 149, 
-    prize: "2,000", 
-    description: "Where data challenges you and code defines you. Individual Event.", 
-    day: "28" 
+  {
+    id: 115,
+    name: "Predict-O-Bingo",
+    club: "Data Science Dept",
+    category: "Technical",
+    poster:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "11:30 AM - 01:00 PM",
+    location: "D-21, D-22",
+    coordinator: "Taiba Khatoon",
+    fee: 149,
+    prize: "2,000",
+    description:
+      "Where data challenges you and code defines you. Individual Event.",
+    day: "28",
   },
-  { 
-    id: 116, 
-    name: "Chronos Challenge", 
-    club: "BBA Department", 
-    category: "Management", 
-    poster: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "11:00 AM - 01:00 PM", 
-    location: "Ground Infront of CHE", 
-    coordinator: "Gaurav Tripathi", 
-    fee: 150, 
-    prize: "Gift Hampers", 
-    description: "A test of teamwork and time management.", 
-    day: "28" 
+  {
+    id: 116,
+    name: "Chronos Challenge",
+    club: "BBA Department",
+    category: "Management",
+    poster:
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "11:00 AM - 01:00 PM",
+    location: "Ground Infront of CHE",
+    coordinator: "Gaurav Tripathi",
+    fee: 150,
+    prize: "Gift Hampers",
+    description: "A test of teamwork and time management.",
+    day: "28",
   },
 
   // --- IMAGE 6: Music & Fun ---
-  { 
-    id: 117, 
-    name: "Slip and Sing", 
-    club: "Fun Club", 
-    category: "Fun Game", 
-    poster: "https://images.unsplash.com/photo-1516280440614-6697288d5d38?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "10:00 AM - 02:00 PM", 
-    location: "R Block Open Ground", 
-    coordinator: "Sneha Tandon", 
-    fee: 20, 
-    prize: "Goodies", 
-    description: "Don't slip while you sing! A hilarious fun event.", 
-    day: "28" 
+  {
+    id: 117,
+    name: "Slip and Sing",
+    club: "Fun Club",
+    category: "Fun Game",
+    poster:
+      "https://images.unsplash.com/photo-1516280440614-6697288d5d38?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "10:00 AM - 02:00 PM",
+    location: "R Block Open Ground",
+    coordinator: "Sneha Tandon",
+    fee: 20,
+    prize: "Goodies",
+    description: "Don't slip while you sing! A hilarious fun event.",
+    day: "28",
   },
-  { 
-    id: 118, 
-    name: "Human Tic Tac Toe", 
-    club: "Fun Club", 
-    category: "Fun Game", 
-    poster: "https://images.unsplash.com/photo-1611996575749-79a3a250f948?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "10:00 AM - 02:00 PM", 
-    location: "R Block Open Ground", 
-    coordinator: "Sneha Tandon", 
-    fee: 20, 
-    prize: "Goodies", 
-    description: "The classic game, played with humans as X and O.", 
-    day: "28" 
+  {
+    id: 118,
+    name: "Human Tic Tac Toe",
+    club: "Fun Club",
+    category: "Fun Game",
+    poster:
+      "https://images.unsplash.com/photo-1611996575749-79a3a250f948?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "10:00 AM - 02:00 PM",
+    location: "R Block Open Ground",
+    coordinator: "Sneha Tandon",
+    fee: 20,
+    prize: "Goodies",
+    description: "The classic game, played with humans as X and O.",
+    day: "28",
   },
-  { 
-    id: 119, 
-    name: "Chopstick Marble Race", 
-    club: "Fun Club", 
-    category: "Fun Game", 
-    poster: "https://images.unsplash.com/photo-1532630571098-79a3d222b00d?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "10:00 AM - 02:00 PM", 
-    location: "R Block Open Ground", 
-    coordinator: "Sneha Tandon", 
-    fee: 20, 
-    prize: "Goodies", 
-    description: "Pick up marbles using chopsticks and transfer them. Test your dexterity.", 
-    day: "28" 
+  {
+    id: 119,
+    name: "Chopstick Marble Race",
+    club: "Fun Club",
+    category: "Fun Game",
+    poster:
+      "https://images.unsplash.com/photo-1532630571098-79a3d222b00d?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "10:00 AM - 02:00 PM",
+    location: "R Block Open Ground",
+    coordinator: "Sneha Tandon",
+    fee: 20,
+    prize: "Goodies",
+    description:
+      "Pick up marbles using chopsticks and transfer them. Test your dexterity.",
+    day: "28",
   },
-  { 
-    id: 120, 
-    name: "Battle of Bands", 
-    club: "Music Club", 
-    category: "Cultural", 
-    poster: "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "02:00 PM - 04:00 PM", 
-    location: "Rang Manch", 
-    coordinator: "Aditya Alok", 
-    fee: 1999, 
-    prize: "20,000", 
-    description: "The ultimate musical showdown. Electrifying performances.", 
-    day: "28" 
+  {
+    id: 120,
+    name: "Battle of Bands",
+    club: "Music Club",
+    category: "Cultural",
+    poster:
+      "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "02:00 PM - 04:00 PM",
+    location: "Rang Manch",
+    coordinator: "Aditya Alok",
+    fee: 1999,
+    prize: "20,000",
+    description: "The ultimate musical showdown. Electrifying performances.",
+    day: "28",
   },
 
   // --- IMAGE 7: More Fun Games ---
-  { 
-    id: 121, 
-    name: "Flip The Bottle", 
-    club: "Fun Club", 
-    category: "Fun Game", 
-    poster: "https://images.unsplash.com/photo-1605218427360-6961d9101d2a?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "10:00 AM - 02:00 PM", 
-    location: "R Block Open Ground", 
-    coordinator: "Sneha Tandon", 
-    fee: 20, 
-    prize: "Goodies", 
-    description: "Land the bottle upright! Simple yet addictive.", 
-    day: "28" 
+  {
+    id: 121,
+    name: "Flip The Bottle",
+    club: "Fun Club",
+    category: "Fun Game",
+    poster:
+      "https://images.unsplash.com/photo-1605218427360-6961d9101d2a?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "10:00 AM - 02:00 PM",
+    location: "R Block Open Ground",
+    coordinator: "Sneha Tandon",
+    fee: 20,
+    prize: "Goodies",
+    description: "Land the bottle upright! Simple yet addictive.",
+    day: "28",
   },
-  { 
-    id: 122, 
-    name: "Roll The Dice", 
-    club: "Fun Club", 
-    category: "Fun Game", 
-    poster: "https://images.unsplash.com/photo-1596502802888-5771611a8a23?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "10:00 AM - 02:00 PM", 
-    location: "R Block Open Ground", 
-    coordinator: "Sneha Tandon", 
-    fee: 20, 
-    prize: "Goodies", 
-    description: "Players roll 3 dice, and the prize corresponds to their sum.", 
-    day: "28" 
+  {
+    id: 122,
+    name: "Roll The Dice",
+    club: "Fun Club",
+    category: "Fun Game",
+    poster:
+      "https://images.unsplash.com/photo-1596502802888-5771611a8a23?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "10:00 AM - 02:00 PM",
+    location: "R Block Open Ground",
+    coordinator: "Sneha Tandon",
+    fee: 20,
+    prize: "Goodies",
+    description: "Players roll 3 dice, and the prize corresponds to their sum.",
+    day: "28",
   },
 
   // --- IMAGE 8: AI, Fun, Music ---
-  { 
-    id: 123, 
-    name: "Prompt Engineering", 
-    club: "AI Department", 
-    category: "Technical", 
-    poster: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "11:30 AM - 01:30 PM", 
-    location: "L-31, L-32", 
-    coordinator: "Aryaman Singh", 
-    fee: 149, 
-    prize: "4,000", 
-    description: "Master the art of crafting effective prompts to generate high-quality AI outputs.", 
-    day: "28" 
+  {
+    id: 123,
+    name: "Prompt Engineering",
+    club: "AI Department",
+    category: "Technical",
+    poster:
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "11:30 AM - 01:30 PM",
+    location: "L-31, L-32",
+    coordinator: "Aryaman Singh",
+    fee: 149,
+    prize: "4,000",
+    description:
+      "Master the art of crafting effective prompts to generate high-quality AI outputs.",
+    day: "28",
   },
-  { 
-    id: 124, 
-    name: "Imposter Challenge", 
-    club: "Fun Club", 
-    category: "Fun Game", 
-    poster: "https://images.unsplash.com/photo-1543599538-a6c4f6cc5c05?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "10:00 AM - 02:00 PM", 
-    location: "R Block Open Ground", 
-    coordinator: "Sneha Tandon", 
-    fee: 20, 
-    prize: "Goodies", 
-    description: "Find the imposter among us!", 
-    day: "28" 
+  {
+    id: 124,
+    name: "Imposter Challenge",
+    club: "Fun Club",
+    category: "Fun Game",
+    poster:
+      "https://images.unsplash.com/photo-1543599538-a6c4f6cc5c05?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "10:00 AM - 02:00 PM",
+    location: "R Block Open Ground",
+    coordinator: "Sneha Tandon",
+    fee: 20,
+    prize: "Goodies",
+    description: "Find the imposter among us!",
+    day: "28",
   },
-  { 
-    id: 125, 
-    name: "Beetien Jo Pal", 
-    club: "Music Club", 
-    category: "Fun Game", 
-    poster: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "10:00 AM - 02:00 PM", 
-    location: "R Block Open Ground", 
-    coordinator: "Sneha Tandon", 
-    fee: 20, 
-    prize: "Goodies", 
-    description: "A musical nostalgia challenge.", 
-    day: "28" 
+  {
+    id: 125,
+    name: "Beetien Jo Pal",
+    club: "Music Club",
+    category: "Fun Game",
+    poster:
+      "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "10:00 AM - 02:00 PM",
+    location: "R Block Open Ground",
+    coordinator: "Sneha Tandon",
+    fee: 20,
+    prize: "Goodies",
+    description: "A musical nostalgia challenge.",
+    day: "28",
   },
-  { 
-    id: 126, 
-    name: "Swap And Mark", 
-    club: "Fun Club", 
-    category: "Fun Game", 
-    poster: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "10:00 AM - 02:00 PM", 
-    location: "R Block Open Ground", 
-    coordinator: "Sneha Tandon", 
-    fee: 20, 
-    prize: "Goodies", 
-    description: "A fun strategy game on the ground.", 
-    day: "28" 
+  {
+    id: 126,
+    name: "Swap And Mark",
+    club: "Fun Club",
+    category: "Fun Game",
+    poster:
+      "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "10:00 AM - 02:00 PM",
+    location: "R Block Open Ground",
+    coordinator: "Sneha Tandon",
+    fee: 20,
+    prize: "Goodies",
+    description: "A fun strategy game on the ground.",
+    day: "28",
   },
 
   // --- IMAGE 9: BCA, Coding, Photography, Basic Sciences ---
-  { 
-    id: 127, 
-    name: "Cryptic Code Cipher", 
-    club: "BCA Department", 
-    category: "Coding", 
-    poster: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "10:00 AM Onwards", 
-    location: "Room 202-203 (CHE)", 
-    coordinator: "Ritika Singh", 
-    fee: 149, 
-    prize: "2,000", 
-    description: "Crack the code, solve the mystery. A cipher challenge.", 
-    day: "28" 
+  {
+    id: 127,
+    name: "Cryptic Code Cipher",
+    club: "BCA Department",
+    category: "Coding",
+    poster:
+      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "10:00 AM Onwards",
+    location: "Room 202-203 (CHE)",
+    coordinator: "Ritika Singh",
+    fee: 149,
+    prize: "2,000",
+    description: "Crack the code, solve the mystery. A cipher challenge.",
+    day: "28",
   },
-  { 
-    id: 128, 
-    name: "The Developers League", 
-    club: "Coding Club", 
-    category: "Coding", 
-    poster: "https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "10:30 AM - 12:00 PM", 
-    location: "AA-14", 
-    coordinator: "Siddhi Sharma", 
-    fee: 149, 
-    prize: "5,000", 
-    description: "Where code meets innovation.", 
-    day: "28" 
+  {
+    id: 128,
+    name: "The Developers League",
+    club: "Coding Club",
+    category: "Coding",
+    poster:
+      "https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "10:30 AM - 12:00 PM",
+    location: "AA-14",
+    coordinator: "Siddhi Sharma",
+    fee: 149,
+    prize: "5,000",
+    description: "Where code meets innovation.",
+    day: "28",
   },
-  { 
-    id: 129, 
-    name: "Frames & Fables", 
-    club: "Photography Club", 
-    category: "Creative", 
-    poster: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "10:00 AM - 02:00 PM", 
-    location: "Mechanics Workshop", 
-    coordinator: "Arnavi Mishra", 
-    fee: 149, 
-    prize: "3,500", 
-    description: "Pixels & Paint, where creativity shines!", 
-    day: "28" 
+  {
+    id: 129,
+    name: "Frames & Fables",
+    club: "Photography Club",
+    category: "Creative",
+    poster:
+      "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "10:00 AM - 02:00 PM",
+    location: "Mechanics Workshop",
+    coordinator: "Arnavi Mishra",
+    fee: 149,
+    prize: "3,500",
+    description: "Pixels & Paint, where creativity shines!",
+    day: "28",
   },
-  { 
-    id: 130, 
-    name: "Escape The Room", 
-    club: "Basic Sciences Dept", 
-    category: "Puzzle", 
-    poster: "https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "10:30 AM - 12:30 PM", 
-    location: "P22-23", 
-    coordinator: "Mahi Shukla", 
-    fee: 149, 
-    prize: "2,500", 
-    description: "Crack the codes, solve the mysteries, and race against time.", 
-    day: "28" 
+  {
+    id: 130,
+    name: "Escape The Room",
+    club: "Basic Sciences Dept",
+    category: "Puzzle",
+    poster:
+      "https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "10:30 AM - 12:30 PM",
+    location: "P22-23",
+    coordinator: "Mahi Shukla",
+    fee: 149,
+    prize: "2,500",
+    description: "Crack the codes, solve the mysteries, and race against time.",
+    day: "28",
   },
 
   // --- IMAGE 10: IoT, Finance, Startup ---
-  { 
-    id: 131, 
-    name: "Drone Dynamics", 
-    club: "IoT Club", 
-    category: "Workshop", 
-    poster: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "10:00 AM - 02:00 PM", 
-    location: "Girls Open Gym", 
-    coordinator: "Swarnim Shukla", 
-    fee: 1, 
-    prize: "Certificates", 
-    description: "Elevating the ordinary. A hands-on drone workshop.", 
-    day: "28" 
+  {
+    id: 131,
+    name: "Drone Dynamics",
+    club: "IoT Club",
+    category: "Workshop",
+    poster:
+      "https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "10:00 AM - 02:00 PM",
+    location: "Girls Open Gym",
+    coordinator: "Swarnim Shukla",
+    fee: 1,
+    prize: "Certificates",
+    description: "Elevating the ordinary. A hands-on drone workshop.",
+    day: "28",
   },
-  { 
-    id: 132, 
-    name: "Mind Meld Challenge", 
-    club: "Quiz Club", 
-    category: "Quiz", 
-    poster: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "10:30 AM - 12:30 PM", 
-    location: "P-31, P-32", 
-    coordinator: "Bhawani Shankar", 
-    fee: 150, 
-    prize: "5,000", 
-    description: "Battle of Brilliance. Test your intellect.", 
-    day: "28" 
+  {
+    id: 132,
+    name: "Mind Meld Challenge",
+    club: "Quiz Club",
+    category: "Quiz",
+    poster:
+      "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "10:30 AM - 12:30 PM",
+    location: "P-31, P-32",
+    coordinator: "Bhawani Shankar",
+    fee: 150,
+    prize: "5,000",
+    description: "Battle of Brilliance. Test your intellect.",
+    day: "28",
   },
-  { 
-    id: 133, 
-    name: "Stock Market Simulation", 
-    club: "Finance Club", 
-    category: "Business", 
-    poster: "https://images.unsplash.com/photo-1611974765270-ca1258634369?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "12:00 PM - 02:00 PM", 
-    location: "Lab 204, 205 (CHE)", 
-    coordinator: "Divyansh Chaurasia", 
-    fee: 149, 
-    prize: "Goodies", 
-    description: "Buy the future, sell the past. National Stock Exchange simulation.", 
-    day: "28" 
+  {
+    id: 133,
+    name: "Stock Market Simulation",
+    club: "Finance Club",
+    category: "Business",
+    poster:
+      "https://images.unsplash.com/photo-1611974765270-ca1258634369?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "12:00 PM - 02:00 PM",
+    location: "Lab 204, 205 (CHE)",
+    coordinator: "Divyansh Chaurasia",
+    fee: 149,
+    prize: "Goodies",
+    description:
+      "Buy the future, sell the past. National Stock Exchange simulation.",
+    day: "28",
   },
-  { 
-    id: 134, 
-    name: "Launchpad 2K25", 
-    club: "E-Cell", 
-    category: "Startup", 
-    poster: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80", 
-    date: "28 March", 
-    time: "11:45 AM - 01:45 PM", 
-    location: "E-14", 
-    coordinator: "Mayank", 
-    fee: 149, 
-    prize: "1,000", 
-    description: "Startup Showdown. Pitch your innovative ideas.", 
-    day: "28" 
+  {
+    id: 134,
+    name: "Launchpad 2K25",
+    club: "E-Cell",
+    category: "Startup",
+    poster:
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80",
+    date: "28 March",
+    time: "11:45 AM - 01:45 PM",
+    location: "E-14",
+    coordinator: "Mayank",
+    fee: 149,
+    prize: "1,000",
+    description: "Startup Showdown. Pitch your innovative ideas.",
+    day: "28",
   },
 
   // ==================================================================================
@@ -559,562 +606,602 @@ const eventsData = [
   // ==================================================================================
 
   // --- IMAGE 1: Fun Games, Tech, Pharma, AI ---
-  { 
-    id: 201, 
-    name: "Chopstick Marble Race", 
-    club: "Fun Club", 
-    category: "Fun Game", 
-    poster: "https://images.unsplash.com/photo-1516575334481-f85287c2c81d?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "10:00 AM - 02:00 PM", 
-    location: "R Block Open Ground", 
-    coordinator: "Sneha Tandon", 
-    fee: 20, 
-    prize: "Goodies", 
-    description: "Test your focus and dexterity in this marble picking race.", 
-    day: "29" 
+  {
+    id: 201,
+    name: "Chopstick Marble Race",
+    club: "Fun Club",
+    category: "Fun Game",
+    poster:
+      "https://images.unsplash.com/photo-1516575334481-f85287c2c81d?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "10:00 AM - 02:00 PM",
+    location: "R Block Open Ground",
+    coordinator: "Sneha Tandon",
+    fee: 20,
+    prize: "Goodies",
+    description: "Test your focus and dexterity in this marble picking race.",
+    day: "29",
   },
-  { 
-    id: 202, 
-    name: "Byte And Build", 
-    club: "Technical Club", 
-    category: "Technical", 
-    poster: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "02:00 PM - 04:00 PM", 
-    location: "J-31", 
-    coordinator: "Yash Chaudhary", 
-    fee: 149, 
-    prize: "3,000", 
-    description: "Hardware assembly and logic building challenge.", 
-    day: "29" 
+  {
+    id: 202,
+    name: "Byte And Build",
+    club: "Technical Club",
+    category: "Technical",
+    poster:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "02:00 PM - 04:00 PM",
+    location: "J-31",
+    coordinator: "Yash Chaudhary",
+    fee: 149,
+    prize: "3,000",
+    description: "Hardware assembly and logic building challenge.",
+    day: "29",
   },
-  { 
-    id: 203, 
-    name: "Cell Maniac", 
-    club: "Pharmatek Club", 
-    category: "Pharma", 
-    poster: "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "01:00 PM - 03:00 PM", 
-    location: "E-14", 
-    coordinator: "Prashant Gupta", 
-    fee: 149, 
-    prize: "1,000", 
-    description: "Increase your creativity and analytical skills in this bio-science event.", 
-    day: "29" 
+  {
+    id: 203,
+    name: "Cell Maniac",
+    club: "Pharmatek Club",
+    category: "Pharma",
+    poster:
+      "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "01:00 PM - 03:00 PM",
+    location: "E-14",
+    coordinator: "Prashant Gupta",
+    fee: 149,
+    prize: "1,000",
+    description:
+      "Increase your creativity and analytical skills in this bio-science event.",
+    day: "29",
   },
-  { 
-    id: 204, 
-    name: "Brain Wave Quiz", 
-    club: "AI & ML Dept", 
-    category: "Quiz", 
-    poster: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "11:30 AM - 01:30 PM", 
-    location: "L-31, L-32", 
-    coordinator: "Vikash Anand", 
-    fee: 149, 
-    prize: "Goodies", 
-    description: "Spark your mind. A quiz on logic, tech, and general awareness.", 
-    day: "29" 
+  {
+    id: 204,
+    name: "Brain Wave Quiz",
+    club: "AI & ML Dept",
+    category: "Quiz",
+    poster:
+      "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "11:30 AM - 01:30 PM",
+    location: "L-31, L-32",
+    coordinator: "Vikash Anand",
+    fee: 149,
+    prize: "Goodies",
+    description:
+      "Spark your mind. A quiz on logic, tech, and general awareness.",
+    day: "29",
   },
 
   // --- IMAGE 2: Rocketry, NSS, Treasure Hunt, Social ---
-  { 
-    id: 205, 
-    name: "Lift Off Challenge", 
-    club: "Model Rocketry India", 
-    category: "Technical", 
-    poster: "https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "09:30 AM - 12:00 PM", 
-    location: "R Block Open Ground", 
-    coordinator: "Vijay Verma", 
-    fee: 149, 
-    prize: "ISRO Projects", 
-    description: "Ignite the sky, embrace the challenge. Build and fly water rockets.", 
-    day: "29" 
+  {
+    id: 205,
+    name: "Lift Off Challenge",
+    club: "Model Rocketry India",
+    category: "Technical",
+    poster:
+      "https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "09:30 AM - 12:00 PM",
+    location: "R Block Open Ground",
+    coordinator: "Vijay Verma",
+    fee: 149,
+    prize: "ISRO Projects",
+    description:
+      "Ignite the sky, embrace the challenge. Build and fly water rockets.",
+    day: "29",
   },
-  { 
-    id: 206, 
-    name: "Kalasangam", 
-    club: "NSS Club", 
-    category: "Cultural", 
-    poster: "https://images.unsplash.com/photo-1543906965-f9520aa2ed8a?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "10:00 AM - 12:00 PM", 
-    location: "Room-203 (CHE)", 
-    coordinator: "Manas", 
-    fee: 149, 
-    prize: "Gift Hampers", 
-    description: "Where voices sing, feet dance, and words inspire.", 
-    day: "29" 
+  {
+    id: 206,
+    name: "Kalasangam",
+    club: "NSS Club",
+    category: "Cultural",
+    poster:
+      "https://images.unsplash.com/photo-1543906965-f9520aa2ed8a?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "10:00 AM - 12:00 PM",
+    location: "Room-203 (CHE)",
+    coordinator: "Manas",
+    fee: 149,
+    prize: "Gift Hampers",
+    description: "Where voices sing, feet dance, and words inspire.",
+    day: "29",
   },
-  { 
-    id: 207, 
-    name: "Treasure Hunt", 
-    club: "Fun Club", 
-    category: "Fun Game", 
-    poster: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "10:45 AM - 12:00 PM", 
-    location: "Ground infront of R Block", 
-    coordinator: "Suryansh Shukla", 
-    fee: 149, 
-    prize: "5,000", 
-    description: "Decode the clues, unlock the treasure.", 
-    day: "29" 
+  {
+    id: 207,
+    name: "Treasure Hunt",
+    club: "Fun Club",
+    category: "Fun Game",
+    poster:
+      "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "10:45 AM - 12:00 PM",
+    location: "Ground infront of R Block",
+    coordinator: "Suryansh Shukla",
+    fee: 149,
+    prize: "5,000",
+    description: "Decode the clues, unlock the treasure.",
+    day: "29",
   },
-  { 
-    id: 208, 
-    name: "She Inspires: Voice of Kanpur", 
-    club: "Social Club", 
-    category: "Social", 
-    poster: "https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "03:00 PM - 04:00 PM", 
-    location: "AA-14", 
-    coordinator: "Arya Jaiswal", 
-    fee: 0, 
-    prize: "Recognition", 
-    description: "Celebrating inspiring women and stories from Kanpur.", 
-    day: "29" 
+  {
+    id: 208,
+    name: "She Inspires: Voice of Kanpur",
+    club: "Social Club",
+    category: "Social",
+    poster:
+      "https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "03:00 PM - 04:00 PM",
+    location: "AA-14",
+    coordinator: "Arya Jaiswal",
+    fee: 0,
+    prize: "Recognition",
+    description: "Celebrating inspiring women and stories from Kanpur.",
+    day: "29",
   },
 
   // --- IMAGE 3: Fun Games (Multi-Day) ---
-  { 
-    id: 209, 
-    name: "Roll The Dice", 
-    club: "Fun Club", 
-    category: "Fun Game", 
-    poster: "https://images.unsplash.com/photo-1596502802888-5771611a8a23?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "10:00 AM - 02:00 PM", 
-    location: "R Block Open Ground", 
-    coordinator: "Sneha Tandon", 
-    fee: 20, 
-    prize: "Goodies", 
-    description: "Roll your luck in this dice game.", 
-    day: "29" 
+  {
+    id: 209,
+    name: "Roll The Dice",
+    club: "Fun Club",
+    category: "Fun Game",
+    poster:
+      "https://images.unsplash.com/photo-1596502802888-5771611a8a23?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "10:00 AM - 02:00 PM",
+    location: "R Block Open Ground",
+    coordinator: "Sneha Tandon",
+    fee: 20,
+    prize: "Goodies",
+    description: "Roll your luck in this dice game.",
+    day: "29",
   },
-  { 
-    id: 210, 
-    name: "Slip and Sing", 
-    club: "Fun Club", 
-    category: "Fun Game", 
-    poster: "https://images.unsplash.com/photo-1516280440614-6697288d5d38?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "10:00 AM - 02:00 PM", 
-    location: "R Block Open Ground", 
-    coordinator: "Sneha Tandon", 
-    fee: 20, 
-    prize: "Goodies", 
-    description: "Sing your heart out while managing the slippery slope.", 
-    day: "29" 
+  {
+    id: 210,
+    name: "Slip and Sing",
+    club: "Fun Club",
+    category: "Fun Game",
+    poster:
+      "https://images.unsplash.com/photo-1516280440614-6697288d5d38?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "10:00 AM - 02:00 PM",
+    location: "R Block Open Ground",
+    coordinator: "Sneha Tandon",
+    fee: 20,
+    prize: "Goodies",
+    description: "Sing your heart out while managing the slippery slope.",
+    day: "29",
   },
-  { 
-    id: 211, 
-    name: "Imposter Challenge", 
-    club: "Fun Club", 
-    category: "Fun Game", 
-    poster: "https://images.unsplash.com/photo-1543599538-a6c4f6cc5c05?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "10:00 AM - 02:00 PM", 
-    location: "R Block Open Ground", 
-    coordinator: "Sneha Tandon", 
-    fee: 20, 
-    prize: "Goodies", 
-    description: "Identify the imposter before it's too late.", 
-    day: "29" 
+  {
+    id: 211,
+    name: "Imposter Challenge",
+    club: "Fun Club",
+    category: "Fun Game",
+    poster:
+      "https://images.unsplash.com/photo-1543599538-a6c4f6cc5c05?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "10:00 AM - 02:00 PM",
+    location: "R Block Open Ground",
+    coordinator: "Sneha Tandon",
+    fee: 20,
+    prize: "Goodies",
+    description: "Identify the imposter before it's too late.",
+    day: "29",
   },
-  { 
-    id: 212, 
-    name: "Human Tic Tac Toe", 
-    club: "Fun Club", 
-    category: "Fun Game", 
-    poster: "https://images.unsplash.com/photo-1611996575749-79a3a250f948?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "10:00 AM - 02:00 PM", 
-    location: "R Block Open Ground", 
-    coordinator: "Sneha Tandon", 
-    fee: 20, 
-    prize: "Goodies", 
-    description: "Life-sized Tic Tac Toe with human pieces.", 
-    day: "29" 
+  {
+    id: 212,
+    name: "Human Tic Tac Toe",
+    club: "Fun Club",
+    category: "Fun Game",
+    poster:
+      "https://images.unsplash.com/photo-1611996575749-79a3a250f948?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "10:00 AM - 02:00 PM",
+    location: "R Block Open Ground",
+    coordinator: "Sneha Tandon",
+    fee: 20,
+    prize: "Goodies",
+    description: "Life-sized Tic Tac Toe with human pieces.",
+    day: "29",
   },
 
   // --- IMAGE 4: Management, Music, Games ---
-  { 
-    id: 213, 
-    name: "Management Trivia Relay", 
-    club: "BBA Department", 
-    category: "Management", 
-    poster: "https://images.unsplash.com/photo-1633613286991-611fe299c4be?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "10:00 AM - 11:30 AM", 
-    location: "Room Number: 113 (CHE)", 
-    coordinator: "Keshav Arora", 
-    fee: 149, 
-    prize: "Gift Hampers", 
-    description: "A relay race of management concepts and trivia.", 
-    day: "29" 
+  {
+    id: 213,
+    name: "Management Trivia Relay",
+    club: "BBA Department",
+    category: "Management",
+    poster:
+      "https://images.unsplash.com/photo-1633613286991-611fe299c4be?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "10:00 AM - 11:30 AM",
+    location: "Room Number: 113 (CHE)",
+    coordinator: "Keshav Arora",
+    fee: 149,
+    prize: "Gift Hampers",
+    description: "A relay race of management concepts and trivia.",
+    day: "29",
   },
-  { 
-    id: 214, 
-    name: "Beetien Jo Pal", 
-    club: "Music Club", 
-    category: "Cultural", 
-    poster: "https://images.unsplash.com/photo-1507838153419-347d1b661929?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "10:00 AM - 02:00 PM", 
-    location: "R Block Open Ground", 
-    coordinator: "Sneha Tandon", 
-    fee: 20, 
-    prize: "Goodies", 
-    description: "Musical nostalgia event.", 
-    day: "29" 
+  {
+    id: 214,
+    name: "Beetien Jo Pal",
+    club: "Music Club",
+    category: "Cultural",
+    poster:
+      "https://images.unsplash.com/photo-1507838153419-347d1b661929?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "10:00 AM - 02:00 PM",
+    location: "R Block Open Ground",
+    coordinator: "Sneha Tandon",
+    fee: 20,
+    prize: "Goodies",
+    description: "Musical nostalgia event.",
+    day: "29",
   },
-  { 
-    id: 215, 
-    name: "Swap And Mark", 
-    club: "Fun Club", 
-    category: "Fun Game", 
-    poster: "https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "10:00 AM - 02:00 PM", 
-    location: "R Block Open Ground", 
-    coordinator: "Sneha Tandon", 
-    fee: 20, 
-    prize: "Goodies", 
-    description: "Strategy based fun game.", 
-    day: "29" 
+  {
+    id: 215,
+    name: "Swap And Mark",
+    club: "Fun Club",
+    category: "Fun Game",
+    poster:
+      "https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "10:00 AM - 02:00 PM",
+    location: "R Block Open Ground",
+    coordinator: "Sneha Tandon",
+    fee: 20,
+    prize: "Goodies",
+    description: "Strategy based fun game.",
+    day: "29",
   },
-  { 
-    id: 216, 
-    name: "Flip The Bottle Challenge", 
-    club: "Fun Club", 
-    category: "Fun Game", 
-    poster: "https://images.unsplash.com/photo-1605218427360-6961d9101d2a?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "10:00 AM - 02:00 PM", 
-    location: "R Block Open Ground", 
-    coordinator: "Sneha Tandon", 
-    fee: 20, 
-    prize: "Goodies", 
-    description: "Test your bottle flipping skills.", 
-    day: "29" 
+  {
+    id: 216,
+    name: "Flip The Bottle Challenge",
+    club: "Fun Club",
+    category: "Fun Game",
+    poster:
+      "https://images.unsplash.com/photo-1605218427360-6961d9101d2a?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "10:00 AM - 02:00 PM",
+    location: "R Block Open Ground",
+    coordinator: "Sneha Tandon",
+    fee: 20,
+    prize: "Goodies",
+    description: "Test your bottle flipping skills.",
+    day: "29",
   },
 
   // --- IMAGE 5: More Fun Games & Brand Event ---
-  { 
-    id: 217, 
-    name: "Pop Back Challenge", 
-    club: "Fun Club", 
-    category: "Fun Game", 
-    poster: "https://images.unsplash.com/photo-1514525253440-b39345208668?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "10:00 AM - 02:00 PM", 
-    location: "R Block Open Ground", 
-    coordinator: "Sneha Tandon", 
-    fee: 20, 
-    prize: "Goodies", 
-    description: "Balloon popping fun.", 
-    day: "29" 
+  {
+    id: 217,
+    name: "Pop Back Challenge",
+    club: "Fun Club",
+    category: "Fun Game",
+    poster:
+      "https://images.unsplash.com/photo-1514525253440-b39345208668?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "10:00 AM - 02:00 PM",
+    location: "R Block Open Ground",
+    coordinator: "Sneha Tandon",
+    fee: 20,
+    prize: "Goodies",
+    description: "Balloon popping fun.",
+    day: "29",
   },
-  { 
-    id: 218, 
-    name: "Pyramid Puff", 
-    club: "Fun Club", 
-    category: "Fun Game", 
-    poster: "https://images.unsplash.com/photo-1611371805429-8a35639b7d8b?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "10:00 AM - 02:00 PM", 
-    location: "R Block Open Ground", 
-    coordinator: "Sneha Tandon", 
-    fee: 20, 
-    prize: "Goodies", 
-    description: "Stack and blow cups.", 
-    day: "29" 
+  {
+    id: 218,
+    name: "Pyramid Puff",
+    club: "Fun Club",
+    category: "Fun Game",
+    poster:
+      "https://images.unsplash.com/photo-1611371805429-8a35639b7d8b?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "10:00 AM - 02:00 PM",
+    location: "R Block Open Ground",
+    coordinator: "Sneha Tandon",
+    fee: 20,
+    prize: "Goodies",
+    description: "Stack and blow cups.",
+    day: "29",
   },
-  { 
-    id: 219, 
-    name: "Ring Rumbble", 
-    club: "Fun Club", 
-    category: "Fun Game", 
-    poster: "https://images.unsplash.com/photo-1531844251246-9a1bfaaeeb9a?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "10:00 AM - 02:00 PM", 
-    location: "R Block Open Ground", 
-    coordinator: "Sneha Tandon", 
-    fee: 20, 
-    prize: "Goodies", 
-    description: "Toss the ring to win.", 
-    day: "29" 
+  {
+    id: 219,
+    name: "Ring Rumbble",
+    club: "Fun Club",
+    category: "Fun Game",
+    poster:
+      "https://images.unsplash.com/photo-1531844251246-9a1bfaaeeb9a?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "10:00 AM - 02:00 PM",
+    location: "R Block Open Ground",
+    coordinator: "Sneha Tandon",
+    fee: 20,
+    prize: "Goodies",
+    description: "Toss the ring to win.",
+    day: "29",
   },
-  { 
-    id: 220, 
-    name: "Brand Morgue", 
-    club: "Business Club", 
-    category: "Business", 
-    poster: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "11:00 AM - 01:00 PM", 
-    location: "P-12", 
-    coordinator: "Palak Rochlani", 
-    fee: 149, 
-    prize: "3,500", 
-    description: "Your Vision - Your Brand - Your Future. Revive dead brands.", 
-    day: "29" 
+  {
+    id: 220,
+    name: "Brand Morgue",
+    club: "Business Club",
+    category: "Business",
+    poster:
+      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "11:00 AM - 01:00 PM",
+    location: "P-12",
+    coordinator: "Palak Rochlani",
+    fee: 149,
+    prize: "3,500",
+    description: "Your Vision - Your Brand - Your Future. Revive dead brands.",
+    day: "29",
   },
 
   // --- IMAGE 6: Photography, Debate, Pharma, Tech ---
-  { 
-    id: 221, 
-    name: "Tech Photography Contest", 
-    club: "Photography Club", 
-    category: "Creative", 
-    poster: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "10:30 AM - 12:30 PM", 
-    location: "D-23, D-24", 
-    coordinator: "Poonam Singh", 
-    fee: 149, 
-    prize: "2,000", 
-    description: "Through the lens of technology.", 
-    day: "29" 
+  {
+    id: 221,
+    name: "Tech Photography Contest",
+    club: "Photography Club",
+    category: "Creative",
+    poster:
+      "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "10:30 AM - 12:30 PM",
+    location: "D-23, D-24",
+    coordinator: "Poonam Singh",
+    fee: 149,
+    prize: "2,000",
+    description: "Through the lens of technology.",
+    day: "29",
   },
-  { 
-    id: 222, 
-    name: "Janta Darbar", 
-    club: "Electoral Literacy Club", 
-    category: "Debate", 
-    poster: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "10:00 AM - 12:00 PM", 
-    location: "Girls Open Ground", 
-    coordinator: "Yash Chaturvedi", 
-    fee: 149, 
-    prize: "Gift Hampers", 
-    description: "Open Debate and Dialogue. Prove your point.", 
-    day: "29" 
+  {
+    id: 222,
+    name: "Janta Darbar",
+    club: "Electoral Literacy Club",
+    category: "Debate",
+    poster:
+      "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "10:00 AM - 12:00 PM",
+    location: "Girls Open Ground",
+    coordinator: "Yash Chaturvedi",
+    fee: 149,
+    prize: "Gift Hampers",
+    description: "Open Debate and Dialogue. Prove your point.",
+    day: "29",
   },
-  { 
-    id: 223, 
-    name: "Pharmathon", 
-    club: "Pharma Dept", 
-    category: "Pharma", 
-    poster: "https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "10:00 AM - 12:00 PM", 
-    location: "G-37", 
-    coordinator: "Shiven Gupta", 
-    fee: 149, 
-    prize: "1,000", 
-    description: "Pioneering Healthcare through technology.", 
-    day: "29" 
+  {
+    id: 223,
+    name: "Pharmathon",
+    club: "Pharma Dept",
+    category: "Pharma",
+    poster:
+      "https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "10:00 AM - 12:00 PM",
+    location: "G-37",
+    coordinator: "Shiven Gupta",
+    fee: 149,
+    prize: "1,000",
+    description: "Pioneering Healthcare through technology.",
+    day: "29",
   },
-  { 
-    id: 224, 
-    name: "Tech Chroma", 
-    club: "CSE & Engineering", 
-    category: "Creative", 
-    poster: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "10:00 AM - 11:30 AM", 
-    location: "D-33, D-34", 
-    coordinator: "Anjali Yadav", 
-    fee: 200, 
-    prize: "5,000", 
-    description: "Unleash Creativity, One colour at a time! 2-3 Team Size.", 
-    day: "29" 
+  {
+    id: 224,
+    name: "Tech Chroma",
+    club: "CSE & Engineering",
+    category: "Creative",
+    poster:
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "10:00 AM - 11:30 AM",
+    location: "D-33, D-34",
+    coordinator: "Anjali Yadav",
+    fee: 200,
+    prize: "5,000",
+    description: "Unleash Creativity, One colour at a time! 2-3 Team Size.",
+    day: "29",
   },
 
   // --- IMAGE 7: Marketing, Ludo, Talent, Art ---
-  { 
-    id: 225, 
-    name: "Ad-Wars", 
-    club: "Pharmacon", 
-    category: "Marketing", 
-    poster: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "11:15 AM - 01:15 PM", 
-    location: "K-14", 
-    coordinator: "Avnish Dwivedi", 
-    fee: 149, 
-    prize: "1,500", 
-    description: "The Ultimate Marketing Battle.", 
-    day: "29" 
+  {
+    id: 225,
+    name: "Ad-Wars",
+    club: "Pharmacon",
+    category: "Marketing",
+    poster:
+      "https://images.unsplash.com/photo-1533750516457-a7f992034fec?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "11:15 AM - 01:15 PM",
+    location: "K-14",
+    coordinator: "Avnish Dwivedi",
+    fee: 149,
+    prize: "1,500",
+    description: "The Ultimate Marketing Battle.",
+    day: "29",
   },
-  { 
-    id: 226, 
-    name: "Ludo Frenzy", 
-    club: "IT Department", 
-    category: "Fun Game", 
-    poster: "https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "12:00 PM - 02:00 PM", 
-    location: "L-33, L-34", 
-    coordinator: "Tanveer", 
-    fee: 200, 
-    prize: "3,000", 
-    description: "Funtastic ML Event. Ludo with a twist.", 
-    day: "29" 
+  {
+    id: 226,
+    name: "Ludo Frenzy",
+    club: "IT Department",
+    category: "Fun Game",
+    poster:
+      "https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "12:00 PM - 02:00 PM",
+    location: "L-33, L-34",
+    coordinator: "Tanveer",
+    fee: 200,
+    prize: "3,000",
+    description: "Funtastic ML Event. Ludo with a twist.",
+    day: "29",
   },
-  { 
-    id: 227, 
-    name: "PSIT Got Talent", 
-    club: "Navrang Club", 
-    category: "Cultural", 
-    poster: "https://images.unsplash.com/photo-1499364615650-ec387c147984?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "12:00 PM - 02:00 PM", 
-    location: "Rangmanch", 
-    coordinator: "Mohd. Usman", 
-    fee: 149, 
-    prize: "3,000", 
-    description: "A golden opportunity to showcase your talent and stand out.", 
-    day: "29" 
+  {
+    id: 227,
+    name: "PSIT Got Talent",
+    club: "Navrang Club",
+    category: "Cultural",
+    poster:
+      "https://images.unsplash.com/photo-1499364615650-ec387c147984?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "12:00 PM - 02:00 PM",
+    location: "Rangmanch",
+    coordinator: "Mohd. Usman",
+    fee: 149,
+    prize: "3,000",
+    description: "A golden opportunity to showcase your talent and stand out.",
+    day: "29",
   },
-  { 
-    id: 228, 
-    name: "Tech-Istry", 
-    club: "Art Club", 
-    category: "Art", 
-    poster: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "12:00 PM - 01:30 PM", 
-    location: "P-11", 
-    coordinator: "Aditya Srivastava", 
-    fee: 149, 
-    prize: "3,000", 
-    description: "Unleash Technology through Sketches.", 
-    day: "29" 
+  {
+    id: 228,
+    name: "Tech-Istry",
+    club: "Art Club",
+    category: "Art",
+    poster:
+      "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "12:00 PM - 01:30 PM",
+    location: "P-11",
+    coordinator: "Aditya Srivastava",
+    fee: 149,
+    prize: "3,000",
+    description: "Unleash Technology through Sketches.",
+    day: "29",
   },
 
   // --- IMAGE 8: Jenga, Cube, Writing, Coding ---
-  { 
-    id: 229, 
-    name: "Giant Jenga", 
-    club: "Fun Club", 
-    category: "Fun Game", 
-    poster: "https://images.unsplash.com/photo-1489850846882-35ef62f8869d?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "09:30 AM - 11:30 AM", 
-    location: "Girls Open Gym", 
-    coordinator: "Aditya Upadhyay", 
-    fee: 150, 
-    prize: "Trophies", 
-    description: "Test your balance and strategy with Giant Jenga.", 
-    day: "29" 
+  {
+    id: 229,
+    name: "Giant Jenga",
+    club: "Fun Club",
+    category: "Fun Game",
+    poster:
+      "https://images.unsplash.com/photo-1489850846882-35ef62f8869d?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "09:30 AM - 11:30 AM",
+    location: "Girls Open Gym",
+    coordinator: "Aditya Upadhyay",
+    fee: 150,
+    prize: "Trophies",
+    description: "Test your balance and strategy with Giant Jenga.",
+    day: "29",
   },
-  { 
-    id: 230, 
-    name: "Cubigoo", 
-    club: "Energy Club", 
-    category: "Puzzle", 
-    poster: "https://images.unsplash.com/photo-1569317002804-ab77bcf1bce4?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "02:00 PM - 04:00 PM", 
-    location: "Girls Open Ground", 
-    coordinator: "Manas Mishra", 
-    fee: 149, 
-    prize: "Goodies", 
-    description: "Building a legacy, one game at a time. Cube puzzle.", 
-    day: "29" 
+  {
+    id: 230,
+    name: "Cubigoo",
+    club: "Energy Club",
+    category: "Puzzle",
+    poster:
+      "https://images.unsplash.com/photo-1569317002804-ab77bcf1bce4?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "02:00 PM - 04:00 PM",
+    location: "Girls Open Ground",
+    coordinator: "Manas Mishra",
+    fee: 149,
+    prize: "Goodies",
+    description: "Building a legacy, one game at a time. Cube puzzle.",
+    day: "29",
   },
-  { 
-    id: 231, 
-    name: "Flash Fiction + Diction Race", 
-    club: "Bastion Club", 
-    category: "Literary", 
-    poster: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "01:00 PM - 03:00 PM", 
-    location: "F-14", 
-    coordinator: "Divy Pratap Singh", 
-    fee: 250, 
-    prize: "Trophies", 
-    description: "English Rapid Spell, Flash Fiction. Prices for two members team.", 
-    day: "29" 
+  {
+    id: 231,
+    name: "Flash Fiction + Diction Race",
+    club: "Bastion Club",
+    category: "Literary",
+    poster:
+      "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "01:00 PM - 03:00 PM",
+    location: "F-14",
+    coordinator: "Divy Pratap Singh",
+    fee: 250,
+    prize: "Trophies",
+    description:
+      "English Rapid Spell, Flash Fiction. Prices for two members team.",
+    day: "29",
   },
-  { 
-    id: 232, 
-    name: "Bug Catcher", 
-    club: "MCA Department", 
-    category: "Coding", 
-    poster: "https://images.unsplash.com/photo-1555099962-4199c345e5dd?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "11:00 AM - 01:00 PM", 
-    location: "N-14", 
-    coordinator: "Tanay Trivedi", 
-    fee: 149, 
-    prize: "3,000", 
-    description: "Count It Down, Win It Up! Debugging competition.", 
-    day: "29" 
+  {
+    id: 232,
+    name: "Bug Catcher",
+    club: "MCA Department",
+    category: "Coding",
+    poster:
+      "https://images.unsplash.com/photo-1555099962-4199c345e5dd?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "11:00 AM - 01:00 PM",
+    location: "N-14",
+    coordinator: "Tanay Trivedi",
+    fee: 149,
+    prize: "3,000",
+    description: "Count It Down, Win It Up! Debugging competition.",
+    day: "29",
   },
 
   // --- IMAGE 9: Yoga, Photo/Video, Tech, Eco ---
-  { 
-    id: 233, 
-    name: "Yoga Charades", 
-    club: "Yoga & Mental Wellness", 
-    category: "Wellness", 
-    poster: "https://images.unsplash.com/photo-1544367563-12123d8965cd?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "09:30 AM - 11:00 AM", 
-    location: "Ground Infront of CHE", 
-    coordinator: "Sameer Singh", 
-    fee: 149, 
-    prize: "Trophies", 
-    description: "Pose & Guess. Yoga with a fun twist.", 
-    day: "29" 
+  {
+    id: 233,
+    name: "Yoga Charades",
+    club: "Yoga & Mental Wellness",
+    category: "Wellness",
+    poster:
+      "https://images.unsplash.com/photo-1544367563-12123d8965cd?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "09:30 AM - 11:00 AM",
+    location: "Ground Infront of CHE",
+    coordinator: "Sameer Singh",
+    fee: 149,
+    prize: "Trophies",
+    description: "Pose & Guess. Yoga with a fun twist.",
+    day: "29",
   },
-  { 
-    id: 234, 
-    name: "Frame Saga", 
-    club: "Photography Club", 
-    category: "Creative", 
-    poster: "https://images.unsplash.com/photo-1512790182412-b19e6d62acd5?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "10:00 AM - 12:00 PM", 
-    location: "R block-Open Ground", 
-    coordinator: "Harshit Jaiswal", 
-    fee: 149, 
-    prize: "Gift Hampers", 
-    description: "Capturing Moments, Creating Memories.", 
-    day: "29" 
+  {
+    id: 234,
+    name: "Frame Saga",
+    club: "Photography Club",
+    category: "Creative",
+    poster:
+      "https://images.unsplash.com/photo-1512790182412-b19e6d62acd5?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "10:00 AM - 12:00 PM",
+    location: "R block-Open Ground",
+    coordinator: "Harshit Jaiswal",
+    fee: 149,
+    prize: "Gift Hampers",
+    description: "Capturing Moments, Creating Memories.",
+    day: "29",
   },
-  { 
-    id: 235, 
-    name: "TechnoTitans", 
-    club: "IEEE", 
-    category: "Technical", 
-    poster: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "11:00 AM - 02:00 PM", 
-    location: "AA-24", 
-    coordinator: "Swastik Awasthi", 
-    fee: 149, 
-    prize: "2,500", 
-    description: "Decode, Compete, Conquer.", 
-    day: "29" 
+  {
+    id: 235,
+    name: "TechnoTitans",
+    club: "IEEE",
+    category: "Technical",
+    poster:
+      "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "11:00 AM - 02:00 PM",
+    location: "AA-24",
+    coordinator: "Swastik Awasthi",
+    fee: 149,
+    prize: "2,500",
+    description: "Decode, Compete, Conquer.",
+    day: "29",
   },
-  { 
-    id: 236, 
-    name: "Eco Escape", 
-    club: "Prayas Club", 
-    category: "Environment", 
-    poster: "https://images.unsplash.com/photo-1542601906990-b4d3fb771343?auto=format&fit=crop&q=80", 
-    date: "29 March", 
-    time: "09:30 AM - 11:00 AM", 
-    location: "J-14", 
-    coordinator: "Manas Tiwari", 
-    fee: 149, 
-    prize: "Goodies", 
-    description: "Unravel the mystery, unlock a sustainable future.", 
-    day: "29" 
-  }
+  {
+    id: 236,
+    name: "Eco Escape",
+    club: "Prayas Club",
+    category: "Environment",
+    poster:
+      "https://images.unsplash.com/photo-1542601906990-b4d3fb771343?auto=format&fit=crop&q=80",
+    date: "29 March",
+    time: "09:30 AM - 11:00 AM",
+    location: "J-14",
+    coordinator: "Manas Tiwari",
+    fee: 149,
+    prize: "Goodies",
+    description: "Unravel the mystery, unlock a sustainable future.",
+    day: "29",
+  },
 ];
 
 export default function EventsPage() {
@@ -1135,9 +1222,10 @@ export default function EventsPage() {
 
     if (searchQuery) {
       const q = searchQuery.toLowerCase();
-      result = result.filter((ev) =>
-        (ev.name || "").toLowerCase().includes(q) ||
-        (ev.club || ev.category || "").toLowerCase().includes(q)
+      result = result.filter(
+        (ev) =>
+          (ev.name || "").toLowerCase().includes(q) ||
+          (ev.club || ev.category || "").toLowerCase().includes(q)
       );
     }
 
@@ -1145,14 +1233,22 @@ export default function EventsPage() {
     setCurrentPage(1);
   }, [selectedDate, searchQuery]);
 
-  const totalPages = Math.max(1, Math.ceil(filteredEvents.length / eventsPerPage));
+  const totalPages = Math.max(
+    1,
+    Math.ceil(filteredEvents.length / eventsPerPage)
+  );
   const indexOfLastEvent = currentPage * eventsPerPage;
   const indexOfFirstEvent = indexOfLastEvent - eventsPerPage;
-  const currentEvents = filteredEvents.slice(indexOfFirstEvent, indexOfLastEvent);
+  const currentEvents = filteredEvents.slice(
+    indexOfFirstEvent,
+    indexOfLastEvent
+  );
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
-    document.getElementById("events-grid-start")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    document
+      .getElementById("events-grid-start")
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   const openModal = (event) => {
@@ -1170,7 +1266,7 @@ export default function EventsPage() {
       <div className="fixed top-0 left-0 w-full h-full pointer-events-none z-0">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-[#f0af23] rounded-full blur-[150px] opacity-[0.08]" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-[#d9bf86] rounded-full blur-[150px] opacity-[0.08]" />
-        
+
         {/* Subtle grid pattern overlay */}
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+CiAgPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWxsPSJub25lIi8+CiAgPHBhdGggZD0iTTAgMGg0MHY0MEgweiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDMpIiBzdHJva2Utd2lkdGg9IjEiLz4KPC9zdmc+')] opacity-20" />
       </div>
@@ -1179,49 +1275,139 @@ export default function EventsPage() {
         {/* HEADER */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-7xl font-font2 text-white mb-6 tracking-tighter uppercase drop-shadow-2xl">
-            Ignitia <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f0af23] to-[#d9bf86]">Events</span>
+            Ignitia{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f0af23] to-[#d9bf86]">
+              Events
+            </span>
           </h1>
 
           {/* SEARCH */}
-          <div className="relative max-w-lg mx-auto group">
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-[#f0af23] to-[#d9bf86] rounded-lg blur opacity-30 group-hover:opacity-60 transition duration-300" />
-            <div className="relative bg-black/80 backdrop-blur-sm rounded-lg flex items-center p-1 border border-white/10">
-              <input
-                type="text"
-                placeholder="Search events..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full bg-transparent text-white px-4 py-3 outline-none placeholder-gray-600 text-lg font-font1"
-              />
-              <div className="p-3 text-[#f0af23]">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          {/* --- REPLACE THE EXISTING SEARCH SECTION WITH THIS --- */}
+
+          <div className="relative max-w-xl mx-auto group z-20">
+            {/* Ambient Outer Glow (Pulses on Hover/Focus) */}
+            <div
+              className={`absolute -inset-0.5 bg-gradient-to-r from-[#f0af23] via-[#d9bf86] to-[#f0af23] rounded-full blur opacity-20 group-hover:opacity-40 transition duration-500 ${
+                searchQuery ? "opacity-30" : ""
+              }`}
+            />
+
+            {/* The Search Container */}
+            <div className="relative flex items-center bg-black/60 backdrop-blur-xl border border-[#ffd270]/50 rounded-full px-6 py-4 shadow-2xl transition-all duration-300 focus-within:ring-1 focus-within:ring-[#ffa05d] focus-within:border focus-within:border-[#f0af23]/90 focus-within:bg-black/60">
+              {/* Animated Search Icon */}
+              <div
+                className={`text-gray-400 mr-4 transition-colors duration-300 ${
+                  searchQuery ? "text-[#f0af23]" : "group-hover:text-[#f0af23]"
+                }`}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
                 </svg>
               </div>
+
+              {/* The Input Field */}
+              <input
+                type="text"
+                placeholder="Search events, clubs, or categories..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full bg-transparent text-white placeholder-gray-500 text-lg font-font1 outline-none tracking-wide"
+              />
+
+              {/* Clear Button (Only shows when typing) */}
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery("")}
+                  className="ml-2 text-[#fee3a9] hover:text-[#f0af23] transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </button>
+              )}
             </div>
           </div>
+
+          
         </div>
 
         {/* DATE TABS */}
-        <div className="flex justify-center mb-12" id="events-grid-start">
-          <div className="flex gap-4 p-2 overflow-x-auto no-scrollbar">
-            {["25", "28", "29"].map((date) => (
-              <button
-                key={date}
-                onClick={() => setSelectedDate(date)}
-                className={`relative px-6 py-3 rounded-lg border transition-all duration-300 font-font2 ${
-                  selectedDate === date
-                    ? "bg-[#f0af23] border-[#f0af23] text-black"
-                    : "bg-black/30 backdrop-blur-sm border-white/10 text-gray-400 hover:border-white/30 hover:text-white"
-                }`}
-              >
-                <div className="text-[10px] uppercase tracking-widest font-bold opacity-70">March</div>
-                <div className="text-2xl font-black">{date}</div>
-              </button>
-            ))}
+        {/* --- REPLACE THE EXISTING DATE TABS SECTION WITH THIS --- */}
+
+        <div
+          className="flex justify-center mb-16 relative z-10 hover:cursor-pointer hover:scale-102 transition-all duration-300"
+          id="events-grid-start"
+        >
+          {/* The Glass Capsule Container */}
+          <div className="p-1.5 bg-[#f0af23]/5 hover:bg-[#f0af23]/10 backdrop-blur-2xl border border-[#f0af23]/60 hover:border-[#f0af23]/80 rounded-full inline-flex relative shadow-[0_0_40px_-10px_rgba(240,175,35,0.15)]">
+            {["25", "28", "29"].map((date) => {
+              const isSelected = selectedDate === date;
+
+              return (
+                <button
+                  key={date}
+                  onClick={() => setSelectedDate(date)}
+                  className="relative px-5 py-3 min-w-[100px] rounded-full flex flex-col font-[font2] items-center justify-center transition-colors duration-300 outline-none group"
+                >
+                  {/* The Sliding Background (Magic Motion) */}
+                  {isSelected && (
+                    <motion.div
+                      layoutId="activeTabBackground"
+                      className="absolute inset-0 bg-gradient-to-r from-[#f0af23] to-[#d9bf86] rounded-full shadow-lg"
+                      transition={{
+                        type: "spring",
+                        stiffness: 300,
+                        damping: 30,
+                      }}
+                    />
+                  )}
+
+                  {/* Content Wrapper */}
+                  <div className="relative z-10 flex flex-col items-center">
+                    <span
+                      className={`text-[12px] uppercase tracking-[0.1em] font-bold font-[font2] mb-0.5 transition-colors duration-200 ${
+                        isSelected
+                          ? "text-black"
+                          : "text-gray-500 group-hover:text-gray-300"
+                      }`}
+                    >
+                      March
+                    </span>
+                    <span
+                      className={`text-2xl font-black font-font2 leading-none transition-colors duration-200 ${
+                        isSelected
+                          ? "text-black"
+                          : "text-white group-hover:text-[#f0af23]"
+                      }`}
+                    >
+                      {date}
+                    </span>
+                  </div>
+                </button>
+              );
+            })}
           </div>
         </div>
-
         {/* EVENTS GRID */}
         <div className="min-h-[500px]">
           {filteredEvents.length > 0 ? (
@@ -1243,7 +1429,9 @@ export default function EventsPage() {
             <div className="flex flex-col items-center justify-center py-20 opacity-50">
               <div className="text-4xl mb-4">🔍</div>
               <h3 className="text-xl font-font2 text-white">No Events Found</h3>
-              <p className="text-gray-400 font-font1">Try adjusting your filters.</p>
+              <p className="text-gray-400 font-font1">
+                Try adjusting your filters.
+              </p>
             </div>
           )}
         </div>
@@ -1259,10 +1447,13 @@ export default function EventsPage() {
               ←
             </button>
             <div className="text-sm font-mono text-gray-400 font-font1">
-              Page <span className="text-white font-font2">{currentPage}</span> of {totalPages}
+              Page <span className="text-white font-font2">{currentPage}</span>{" "}
+              of {totalPages}
             </div>
             <button
-              onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))}
+              onClick={() =>
+                handlePageChange(Math.min(totalPages, currentPage + 1))
+              }
               disabled={currentPage === totalPages}
               className="p-3 rounded-full border border-white/10 text-[#f0af23] disabled:opacity-30 hover:bg-white/5 transition"
             >
@@ -1281,8 +1472,11 @@ export default function EventsPage() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <div className="absolute inset-0 bg-black/90 backdrop-blur-sm" onClick={closeModal} />
-            
+            <div
+              className="absolute inset-0 bg-black/90 backdrop-blur-sm"
+              onClick={closeModal}
+            />
+
             <motion.div
               className="relative bg-black/80 backdrop-blur-lg w-full max-w-4xl rounded-2xl overflow-hidden shadow-2xl border border-white/10 flex flex-col md:flex-row max-h-[90vh]"
               initial={{ scale: 0.95, y: 20 }}
@@ -1291,50 +1485,99 @@ export default function EventsPage() {
             >
               {/* Modal Image */}
               <div className="w-full md:w-2/5 h-64 md:h-auto relative">
-                 <img src={selectedEvent.poster} alt="" className="absolute inset-0 w-full h-full object-cover" />
-                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent md:bg-gradient-to-r" />
+                <img
+                  src={selectedEvent.poster}
+                  alt=""
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent md:bg-gradient-to-r" />
               </div>
 
               {/* Modal Content */}
               <div className="w-full md:w-3/5 p-6 md:p-8 overflow-y-auto custom-scrollbar">
                 <div className="flex justify-between items-start mb-4">
                   <div>
-                    <h2 className="text-3xl font-font2 text-white leading-none mb-2">{selectedEvent.name}</h2>
-                    <span className="text-[#f0af23] font-mono text-sm tracking-wider uppercase font-font1">{selectedEvent.club}</span>
+                    <h2 className="text-3xl font-font2 text-white leading-none mb-2">
+                      {selectedEvent.name}
+                    </h2>
+                    <span className="text-[#f0af23] font-mono text-sm tracking-wider uppercase font-font1">
+                      {selectedEvent.club}
+                    </span>
                   </div>
-                  <button onClick={closeModal} className="text-gray-500 hover:text-white transition">
-                    <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+                  <button
+                    onClick={closeModal}
+                    className="text-gray-500 hover:text-white transition"
+                  >
+                    <svg
+                      className="w-8 h-8"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
                   </button>
                 </div>
 
-                <p className="text-gray-300 leading-relaxed mb-8 font-font1">{selectedEvent.description}</p>
+                <p className="text-gray-300 leading-relaxed mb-8 font-font1">
+                  {selectedEvent.description}
+                </p>
 
                 <div className="grid grid-cols-2 gap-y-6 gap-x-4 mb-8">
                   <div>
-                    <div className="text-xs text-gray-500 uppercase tracking-widest mb-1 font-font2">Date & Time</div>
-                    <div className="text-white font-medium font-font1">{selectedEvent.date} • {selectedEvent.time}</div>
+                    <div className="text-xs text-gray-500 uppercase tracking-widest mb-1 font-font2">
+                      Date & Time
+                    </div>
+                    <div className="text-white font-medium font-font1">
+                      {selectedEvent.date} • {selectedEvent.time}
+                    </div>
                   </div>
                   <div>
-                    <div className="text-xs text-gray-500 uppercase tracking-widest mb-1 font-font2">Venue</div>
-                    <div className="text-white font-medium font-font1">{selectedEvent.location}</div>
+                    <div className="text-xs text-gray-500 uppercase tracking-widest mb-1 font-font2">
+                      Venue
+                    </div>
+                    <div className="text-white font-medium font-font1">
+                      {selectedEvent.location}
+                    </div>
                   </div>
                   <div>
-                    <div className="text-xs text-gray-500 uppercase tracking-widest mb-1 font-font2">Prize Pool</div>
-                    <div className="text-[#f0af23] font-bold text-xl font-font2">{typeof selectedEvent.prize === "number" ? `₹${selectedEvent.prize}` : selectedEvent.prize}</div>
+                    <div className="text-xs text-gray-500 uppercase tracking-widest mb-1 font-font2">
+                      Prize Pool
+                    </div>
+                    <div className="text-[#f0af23] font-bold text-xl font-font2">
+                      {typeof selectedEvent.prize === "number"
+                        ? `₹${selectedEvent.prize}`
+                        : selectedEvent.prize}
+                    </div>
                   </div>
                   <div>
-                    <div className="text-xs text-gray-500 uppercase tracking-widest mb-1 font-font2">Entry Fee</div>
-                    <div className="text-white font-medium font-font1">₹{selectedEvent.fee}</div>
+                    <div className="text-xs text-gray-500 uppercase tracking-widest mb-1 font-font2">
+                      Entry Fee
+                    </div>
+                    <div className="text-white font-medium font-font1">
+                      ₹{selectedEvent.fee}
+                    </div>
                   </div>
                 </div>
 
                 <div className="flex gap-4">
-                   <button className="flex-1 bg-gradient-to-r from-[#f0af23] to-[#d9bf86] text-black font-font2 font-bold py-3 px-6 rounded-lg hover:opacity-90 transition-opacity" onClick={() => alert("Registration Logic")}>
-                     Register Now
-                   </button>
-                   <button className="px-6 py-3 rounded-lg border border-white/20 hover:bg-white/5 transition font-font1" onClick={closeModal}>
-                     Close
-                   </button>
+                  <button
+                    className="flex-1 bg-gradient-to-r from-[#f0af23] to-[#d9bf86] text-black font-font2 font-bold py-3 px-6 rounded-lg hover:opacity-90 transition-opacity"
+                    onClick={() => alert("Registration Logic")}
+                  >
+                    Register Now
+                  </button>
+                  <button
+                    className="px-6 py-3 rounded-lg border border-white/20 hover:bg-white/5 transition font-font1"
+                    onClick={closeModal}
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
             </motion.div>
