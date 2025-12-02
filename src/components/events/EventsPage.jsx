@@ -91,7 +91,7 @@ const eventsData = [
     location: "J-22",
     coordinator: "Harsh Yadav",
     fee: 149,
-    prize: "Pool Prizes",
+    prize: "4,000",
     description:
       "Create original crafts using only recycled materials. 3 members per team.",
     day: "28",
@@ -1263,13 +1263,13 @@ export default function EventsPage() {
   return (
     <div className="min-h-screen bg-black text-white pt-24 pb-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden font-font1">
       {/* Background Ambience */}
-      <div className="fixed top-0 left-0 w-full h-full pointer-events-none z-0">
+      {/* <div className="fixed top-0 left-0 w-full h-full pointer-events-none z-0">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-[#f0af23] rounded-full blur-[150px] opacity-[0.08]" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-[#d9bf86] rounded-full blur-[150px] opacity-[0.08]" />
 
-        {/* Subtle grid pattern overlay */}
+        Subtle grid pattern overlay 
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+CiAgPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWxsPSJub25lIi8+CiAgPHBhdGggZD0iTTAgMGg0MHY0MEgweiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDMpIiBzdHJva2Utd2lkdGg9IjEiLz4KPC9zdmc+')] opacity-20" />
-      </div>
+      </div> */}
 
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* HEADER */}

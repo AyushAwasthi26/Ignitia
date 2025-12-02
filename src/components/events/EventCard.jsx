@@ -2,7 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 
 // Slightly adjusted clip path to ensure text at bottom corners isn't cut off too aggressively
-{/* 'path("M1 443.824V92.4971C1 87.9401 2.79117 83.5658 5.98718 80.3176L78.9268 6.18619C82.1912 2.86844 86.6508 1 91.3052 1H290.247C299.838 1 307.612 8.77488 307.612 18.3657V415.334C307.612 424.925 299.838 432.699 290.247 432.699H165.34C161.033 432.699 156.879 434.3 153.686 437.191L132.134 456.699C128.941 459.589 124.787 461.19 120.48 461.19H18.3657C8.77487 461.19 1 453.415 1 443.824Z")', */}
+{
+  /* 'path("M1 443.824V92.4971C1 87.9401 2.79117 83.5658 5.98718 80.3176L78.9268 6.18619C82.1912 2.86844 86.6508 1 91.3052 1H290.247C299.838 1 307.612 8.77488 307.612 18.3657V415.334C307.612 424.925 299.838 432.699 290.247 432.699H165.34C161.033 432.699 156.879 434.3 153.686 437.191L132.134 456.699C128.941 459.589 124.787 461.19 120.48 461.19H18.3657C8.77487 461.19 1 453.415 1 443.824Z")', */
+}
 // const CLIP = "polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%)";
 
 // const CLIP = 'path("M30.76 0 C20 0 12 12 12 24 L12 46.1 L0 46.1 L0 461.19 L276.85 461.19 C290 461.19 302 449.19 302 436.19 L307.61 415.07 L307.61 0 Z")';
@@ -79,7 +81,11 @@ export default function EventCard({ event, onOpen }) {
 
         {/* --- GRADIENT OVERLAYS --- */}
         {/* Always visible gradient to make text readable */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent opacity-90" />
+        {/* SOFT bottom fade for readability */}
+        {/* --- BOTTOM VISIBILITY SHADOW (STRONG + SMOOTH) --- */}
+        <div
+          className="absolute bottom-0 w-full h-[70%] lg:h-[45%] bg-gradient-to-t  from-black via-black/80 to-transparent pointer-events-none"
+        />
         {/* Gold glow on hover */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#f0af23]/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
@@ -105,18 +111,19 @@ export default function EventCard({ event, onOpen }) {
             {/* 1. Title Row (One line) */}
             <div className="flex items-end justify-between gap-2 mb-1">
               <h3
-                className="text-white text-2xl font-black tracking-tight truncate w-full"
+                className="text-white text-3xl font-black font-[font2] tracking-wider overflow-visible w-full"
+                // className="text-white text-3xl font-black font-[font2] tracking-tight truncate w-full"
                 title={event.name}
               >
                 {event.name}
               </h3>
               {/* Prize - Always visible */}
               <div className="flex flex-col items-end shrink-0">
-                <span className="text-[10px] text-gray-400 uppercase tracking-wider">
-                  Win
+                <span className="text-[15px] text-gray-400 uppercase tracking-wider">
+                  PRIZE
                 </span>
-                <span className="text-[#f0af23] font-bold">
-                  {typeof event.prize === "number"
+                <span className="text-[#f0af23] text-2xl font-bold">
+                  {typeof event.prize === "number" // CHANGE IT TO STRING IF ONLY STRING IS BEING USED
                     ? `₹${event.prize}`
                     : event.prize}
                 </span>
@@ -136,9 +143,9 @@ export default function EventCard({ event, onOpen }) {
               className="transition-all duration-300 
                             xl:max-h-0 xl:opacity-0 xl:group-hover:max-h-20 xl:group-hover:opacity-100"
             >
-              <p className="text-sm text-gray-300 line-clamp-1 mb-3 border-l-2 border-[#f0af23] pl-2">
+              {/* <p className="text-sm text-gray-300 line-clamp-1 mb-3 border-l-2 border-[#f0af23] pl-2">
                 {event.description}
-              </p>
+              </p> */}
 
               <div className="flex items-center justify-between text-xs text-gray-400 pt-2 border-t border-white/10">
                 <div className="flex items-center gap-1">
@@ -161,7 +168,7 @@ export default function EventCard({ event, onOpen }) {
                       d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                     />
                   </svg>
-                  <span className="truncate max-w-[100px]">
+                  <span className="truncate max-w-[150px] text-xl">
                     {event.location}
                   </span>
                 </div>
