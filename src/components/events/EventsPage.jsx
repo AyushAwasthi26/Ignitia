@@ -3,15 +3,12 @@ import EventCard from "./EventCard"; // Ensure this path is correct
 import { motion, AnimatePresence } from "framer-motion";
 import eventsData from "./eventsData";
 
-
-
-
 export default function EventsPage() {
   const [selectedDate, setSelectedDate] = useState("28");
   const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedEvent, setSelectedEvent] = useState(null);
-  
+
   // NEW: Helper to manage animation priority
   const [isPending, startTransition] = useTransition();
 
@@ -90,8 +87,6 @@ export default function EventsPage() {
           </h1>
 
           {/* SEARCH */}
-          {/* --- REPLACE THE EXISTING SEARCH SECTION WITH THIS --- */}
-
           <div className="relative max-w-xl mx-auto group z-20">
             {/* Ambient Outer Glow (Pulses on Hover/Focus) */}
             <div
@@ -155,13 +150,9 @@ export default function EventsPage() {
               )}
             </div>
           </div>
-
-          
         </div>
 
         {/* DATE TABS */}
-        {/* --- REPLACE THE EXISTING DATE TABS SECTION WITH THIS --- */}
-
         <div
           className="flex justify-center mb-16 relative z-10 hover:cursor-pointer hover:scale-102 transition-all duration-300"
           id="events-grid-start"
@@ -175,10 +166,10 @@ export default function EventsPage() {
                 <button
                   key={date}
                   onClick={() => {
-  startTransition(() => {
-    setSelectedDate(date);
-  });
-}}
+                    startTransition(() => {
+                      setSelectedDate(date);
+                    });
+                  }}
                   className="relative px-5 py-3 min-w-[100px] rounded-full flex flex-col font-[font2] items-center justify-center transition-colors duration-300 outline-none group"
                 >
                   {/* The Sliding Background (Magic Motion) */}
@@ -202,7 +193,7 @@ export default function EventsPage() {
                           ? "text-black"
                           : "text-gray-500 group-hover:text-gray-300"
                       }`}
-                    > 
+                    >
                       March
                     </span>
                     <span
@@ -220,36 +211,42 @@ export default function EventsPage() {
             })}
           </div>
         </div>
+
         {/* EVENTS GRID */}
-        {/* EVENTS GRID */}
-<div className="min-h-[500px]">
-  <div className={`transition-opacity duration-300 ${isPending ? "opacity-50" : "opacity-100"}`}>
-    {filteredEvents.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
-              {currentEvents.map((event, idx) => (
-                <motion.div
-                  key={event.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: idx * 0.05 }}
-                  whileHover={{ y: -5 }}
-                  className="h-full"
-                >
-                  <EventCard event={event} onOpen={openModal} />
-                </motion.div>
-              ))}
-            </div>
-          ) : (
-            <div className="flex flex-col items-center justify-center py-20 opacity-50">
-              <div className="text-4xl mb-4">🔍</div>
-              <h3 className="text-xl font-font2 text-white">No Events Found</h3>
-              <p className="text-gray-400 font-font1">
-                Try adjusting your filters.
-              </p>
-            </div>
-          )}
+        <div className="min-h-[500px]">
+          <div
+            className={`transition-opacity duration-300 ${
+              isPending ? "opacity-50" : "opacity-100"
+            }`}
+          >
+            {filteredEvents.length > 0 ? (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
+                {currentEvents.map((event, idx) => (
+                  <motion.div
+                    key={event.id}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: idx * 0.05 }}
+                    whileHover={{ y: -5 }}
+                    className="h-full"
+                  >
+                    <EventCard event={event} onOpen={openModal} />
+                  </motion.div>
+                ))}
+              </div>
+            ) : (
+              <div className="flex flex-col items-center justify-center py-20 opacity-50">
+                <div className="text-4xl mb-4">🔍</div>
+                <h3 className="text-xl font-font2 text-white">
+                  No Events Found
+                </h3>
+                <p className="text-gray-400 font-font1">
+                  Try adjusting your filters.
+                </p>
+              </div>
+            )}
+          </div>
         </div>
-      </div>
 
         {/* PAGINATION */}
         {totalPages > 1 && (
@@ -402,3 +399,6 @@ export default function EventsPage() {
     </div>
   );
 }
+
+
+

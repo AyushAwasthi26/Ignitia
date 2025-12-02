@@ -36,6 +36,10 @@ const CLIP = `polygon(
   0 calc(100% - 12px)
 )`;
 
+// Define the shadow class once to reuse it.
+// This creates a strong, dark blur behind the text for readability.
+const TEXT_SHADOW_CLASS = "[text-shadow:0_4px_8px_rgba(0,0,0,0.8)]";
+
 export default function EventCard({ event, onOpen }) {
   const club = event.club || event.category || "Club";
 
@@ -49,6 +53,7 @@ export default function EventCard({ event, onOpen }) {
       whileHover={{ scale: 1.02 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
       onClick={() => onOpen?.(event)}
+      style={{ willChange: "transform" }}
     >
       {/* CARD SHAPE CONTAINER */}
       {/* LAYER 1: THE BORDER (Gold Gradient Background) */}
@@ -83,9 +88,7 @@ export default function EventCard({ event, onOpen }) {
         {/* Always visible gradient to make text readable */}
         {/* SOFT bottom fade for readability */}
         {/* --- BOTTOM VISIBILITY SHADOW (STRONG + SMOOTH) --- */}
-        <div
-          className="absolute bottom-0 w-full h-[70%] lg:h-[45%] bg-gradient-to-t  from-black via-black/80 to-transparent pointer-events-none"
-        />
+        <div className="absolute bottom-0 w-full h-[70%] lg:h-[45%] bg-gradient-to-t  from-black via-black/80 to-transparent pointer-events-none" />
         {/* Gold glow on hover */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#f0af23]/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
@@ -111,7 +114,7 @@ export default function EventCard({ event, onOpen }) {
             {/* 1. Title Row (One line) */}
             <div className="flex items-end justify-between gap-2 mb-1">
               <h3
-                className="text-white text-3xl font-black font-[font2] tracking-wider overflow-visible w-full"
+                className={`text-white text-3xl font-black font-[font2] tracking-wider overflow-visible w-full ${TEXT_SHADOW_CLASS}`}
                 // className="text-white text-3xl font-black font-[font2] tracking-tight truncate w-full"
                 title={event.name}
               >
@@ -119,10 +122,14 @@ export default function EventCard({ event, onOpen }) {
               </h3>
               {/* Prize - Always visible */}
               <div className="flex flex-col items-end shrink-0">
-                <span className="text-[15px] text-gray-400 uppercase tracking-wider">
+                <span
+                  className={`text-[15px] text-gray-400 uppercase tracking-wider ${TEXT_SHADOW_CLASS}`}
+                >
                   PRIZE
                 </span>
-                <span className="text-[#f0af23] text-2xl font-bold">
+                <span
+                  className={`text-[#f0af23] text-2xl font-bold ${TEXT_SHADOW_CLASS}`}
+                >
                   {typeof event.prize === "number" // CHANGE IT TO STRING IF ONLY STRING IS BEING USED
                     ? `₹${event.prize}`
                     : event.prize}
@@ -131,7 +138,9 @@ export default function EventCard({ event, onOpen }) {
             </div>
 
             {/* 2. Subtitle (Club) */}
-            <div className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
+            <div
+              className={`text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3 ${TEXT_SHADOW_CLASS}`}
+            >
               {club}
             </div>
 
@@ -148,7 +157,7 @@ export default function EventCard({ event, onOpen }) {
               </p> */}
 
               <div className="flex items-center justify-between text-xs text-gray-400 pt-2 border-t border-white/10">
-                <div className="flex items-center gap-1">
+                <div className={`flex items-center gap-1 ${TEXT_SHADOW_CLASS}`}>
                   <svg
                     className="w-3 h-3 text-[#f0af23]"
                     fill="none"
@@ -173,7 +182,9 @@ export default function EventCard({ event, onOpen }) {
                   </span>
                 </div>
 
-                <div className="text-white hover:text-[#f0af23] flex items-center gap-1 font-medium transition-colors">
+                <div
+                  className={`text-white hover:text-[#f0af23] flex items-center gap-1 font-medium transition-colors ${TEXT_SHADOW_CLASS}`}
+                >
                   View Details &rarr;
                 </div>
               </div>
