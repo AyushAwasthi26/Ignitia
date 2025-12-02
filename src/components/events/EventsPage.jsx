@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useTransition, useMemo } from "react";
 import EventCard from "./EventCard"; // Ensure this path is correct
 import { motion, AnimatePresence } from "framer-motion";
 import eventsData from "./eventsData";
@@ -10,12 +10,15 @@ export default function EventsPage() {
   const [selectedDate, setSelectedDate] = useState("28");
   const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const [filteredEvents, setFilteredEvents] = useState([]);
   const [selectedEvent, setSelectedEvent] = useState(null);
+  
+  // NEW: Helper to manage animation priority
+  const [isPending, startTransition] = useTransition();
 
   const eventsPerPage = 8;
 
-  useEffect(() => {
+  // NEW: Calculate events instantly instead of waiting for useEffect
+  const filteredEvents = useMemo(() => {
     let result = eventsData;
 
     if (selectedDate) {
@@ -30,8 +33,11 @@ export default function EventsPage() {
           (ev.club || ev.category || "").toLowerCase().includes(q)
       );
     }
+    return result;
+  }, [selectedDate, searchQuery]);
 
-    setFilteredEvents(result);
+  // Reset page when filters change
+  useEffect(() => {
     setCurrentPage(1);
   }, [selectedDate, searchQuery]);
 
@@ -168,7 +174,11 @@ export default function EventsPage() {
               return (
                 <button
                   key={date}
-                  onClick={() => setSelectedDate(date)}
+                  onClick={() => {
+  startTransition(() => {
+    setSelectedDate(date);
+  });
+}}
                   className="relative px-5 py-3 min-w-[100px] rounded-full flex flex-col font-[font2] items-center justify-center transition-colors duration-300 outline-none group"
                 >
                   {/* The Sliding Background (Magic Motion) */}
@@ -211,8 +221,10 @@ export default function EventsPage() {
           </div>
         </div>
         {/* EVENTS GRID */}
-        <div className="min-h-[500px]">
-          {filteredEvents.length > 0 ? (
+        {/* EVENTS GRID */}
+<div className="min-h-[500px]">
+  <div className={`transition-opacity duration-300 ${isPending ? "opacity-50" : "opacity-100"}`}>
+    {filteredEvents.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
               {currentEvents.map((event, idx) => (
                 <motion.div
@@ -237,6 +249,7 @@ export default function EventsPage() {
             </div>
           )}
         </div>
+      </div>
 
         {/* PAGINATION */}
         {totalPages > 1 && (
