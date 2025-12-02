@@ -1390,7 +1390,7 @@ export default function EventsPage() {
                           ? "text-black"
                           : "text-gray-500 group-hover:text-gray-300"
                       }`}
-                    >
+                    > 
                       March
                     </span>
                     <span

@@ -2,14 +2,44 @@ import React from "react";
 import { motion } from "framer-motion";
 
 // Slightly adjusted clip path to ensure text at bottom corners isn't cut off too aggressively
-const CLIP = "polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%)";
+{/* 'path("M1 443.824V92.4971C1 87.9401 2.79117 83.5658 5.98718 80.3176L78.9268 6.18619C82.1912 2.86844 86.6508 1 91.3052 1H290.247C299.838 1 307.612 8.77488 307.612 18.3657V415.334C307.612 424.925 299.838 432.699 290.247 432.699H165.34C161.033 432.699 156.879 434.3 153.686 437.191L132.134 456.699C128.941 459.589 124.787 461.19 120.48 461.19H18.3657C8.77487 461.19 1 453.415 1 443.824Z")', */}
+// const CLIP = "polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%)";
+
+// const CLIP = 'path("M30.76 0 C20 0 12 12 12 24 L12 46.1 L0 46.1 L0 461.19 L276.85 461.19 C290 461.19 302 449.19 302 436.19 L307.61 415.07 L307.61 0 Z")';
+
+// THE GOAT!!!!!!
+// const CLIP = 'path("M1 443.824V92.4971C1 87.9401 2.79117 83.5658 5.98718 80.3176L78.9268 6.18619C82.1912 2.86844 86.6508 1 91.3052 1H290.247C299.838 1 307.612 8.77488 307.612 18.3657V415.334C307.612 424.925 299.838 432.699 290.247 432.699H165.34C161.033 432.699 156.879 434.3 153.686 437.191L132.134 456.699C128.941 459.589 124.787 461.19 120.48 461.19H18.3657C8.77487 461.19 1 453.415 1 443.824Z")';
+
+// THE "SMOOTH" RESPONSIVE GOAT
+// We use calc() to make it responsive, and added extra points at the corners
+// to simulate the rounded radius you loved, without the fixed-pixel limitations.
+const CLIP = `polygon(
+  /* TOP-LEFT CUT (Rounded) */
+  0 55px,
+  3px 50px, 
+  50px 3px, 
+  55px 0,
+
+  /* TOP-RIGHT CORNER (Rounded) */
+  calc(100% - 12px) 0,
+  100% 12px,
+
+  /* BOTTOM-RIGHT CUT (Rounded) */
+  100% calc(100% - 35px),
+  100% calc(100% - 35px),
+  calc(100% - 35px) 100%,
+
+  /* BOTTOM-LEFT CORNER (Rounded) */
+  12px 100%,
+  0 calc(100% - 12px)
+)`;
 
 export default function EventCard({ event, onOpen }) {
   const club = event.club || event.category || "Club";
 
   return (
     <motion.div
-      className="relative w-full h-[24rem] sm:h-[26rem] cursor-pointer select-none group"
+      className="relative w-full h-[24rem] sm:h-[28rem] cursor-pointer select-none group"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -30,10 +60,10 @@ export default function EventCard({ event, onOpen }) {
         }}
       />
 
-      {/* LAYER 2: THE CONTENT (Inset by 2px) */}
-      {/* We shrink this inner div by 2px (inset-[2px]) to reveal the Gold Layer behind it as a border */}
+      {/* LAYER 2: THE CONTENT (Inset by 1px) */}
+      {/* We shrink this inner div by 1px (inset-[1px]) to reveal the Gold Layer behind it as a border */}
       <div
-        className="absolute inset-[2px] bg-[#1a1a1a] overflow-hidden"
+        className="absolute inset-[1px] bg-[#1a1a1a] overflow-hidden"
         style={{
           clipPath: CLIP,
           WebkitClipPath: CLIP,
