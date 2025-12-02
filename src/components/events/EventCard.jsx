@@ -39,7 +39,7 @@ export default function EventCard({ event, onOpen }) {
 
   return (
     <motion.div
-      className="relative w-full h-[24rem] sm:h-[28rem] cursor-pointer select-none group"
+      className="relative w-full h-[24rem] sm:h-[32rem] cursor-pointer select-none group"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -63,7 +63,7 @@ export default function EventCard({ event, onOpen }) {
       {/* LAYER 2: THE CONTENT (Inset by 1px) */}
       {/* We shrink this inner div by 1px (inset-[1px]) to reveal the Gold Layer behind it as a border */}
       <div
-        className="absolute inset-[1px] bg-[#1a1a1a] overflow-hidden"
+        className="absolute inset-[1px] overflow-hidden"
         style={{
           clipPath: CLIP,
           WebkitClipPath: CLIP,
@@ -71,7 +71,7 @@ export default function EventCard({ event, onOpen }) {
       >
         {/* --- BACKGROUND IMAGE --- */}
         <div
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-120" // NOTE FOR FUTURE SELF: REMOve this hoveer zoom if fixed posters are used
           style={{
             backgroundImage: `url(${event.poster})`,
           }}
@@ -90,9 +90,9 @@ export default function EventCard({ event, onOpen }) {
             - Desktop (xl:): opacity-0, hidden by default, visible on group-hover.
            ================================================================================== */}
 
-        <div className="absolute inset-0 p-5 flex flex-col justify-end">
+        <div className="absolute inset-0 p-6 flex flex-col justify-end">
           {/* TOP RIGHT BADGE (Date/Time) - Moved to right as requested */}
-          <div className="absolute top-4 right-4 z-20">
+          <div className="absolute top-4 right-1 z-20 lg:opacity-0 lg:group-hover:opacity-100 transform transition-all duration-300">
             <div className="bg-black/60 backdrop-blur-md border border-[#f0af23]/30 px-3 py-1.5 rounded text-md font-[font1] text-[#f0af23] flex gap-2 items-center">
               <span>{event.date}</span>
               <span className="w-1 h-1 bg-white rounded-full" />

@@ -12,7 +12,7 @@ const eventsData = [
     club: "IEEE & Computer Society",
     category: "Aptitude",
     poster:
-      "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80",
     date: "25 March",
     time: "11:00 AM - 12:35 PM",
     location: "AA-14",
