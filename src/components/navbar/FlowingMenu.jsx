@@ -81,7 +81,7 @@ function MenuItem({ link, text, hoverText, image1, image2, onMenuClose }) {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: 'instant'
     });
   };
 
