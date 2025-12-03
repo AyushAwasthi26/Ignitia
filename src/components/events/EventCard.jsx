@@ -77,10 +77,10 @@ export default function EventCard({ event, onOpen }) {
         }}
       >
         {/* --- BACKGROUND IMAGE --- */}
-        <div
+        <div                         
           className="absolute inset-0 bg-[url('/media/events/poster.jpeg')] bg-cover bg-center transition-transform duration-700 group-hover:scale-120" // NOTE FOR FUTURE SELF: REMOve this hoveer zoom if fixed posters are used
           // style={{
-          //   // backgroundImage: `url(${event.poster})`, // ALERT!!!: Enable it to show actual poster
+          //   // backgroundImage: `url(${event.poster})`, // ALERT!!!: UNcomment it when given actual poster and remove the ( bg-[url('/media/events/poster.jpeg')] ) from className
           // }}
         />
 
