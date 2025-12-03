@@ -1,5 +1,7 @@
 import React from "react";
-import img from "/media/home/PSIT.jpg"
+import { motion } from "framer-motion"; // Added framer-motion
+import img from "/media/home/PSIT.jpg"; // Kept your original import logic (though unused in the map logic, kept for safety)
+
 const HeroTiles = ({ images = [], logo = "", menuIcon = null, signInLabel = "SIGN IN" }) => {
   if (!images || images.length < 6) {
     console.warn("HeroTiles: expected 6 images in the `images` prop.");
@@ -8,13 +10,19 @@ const HeroTiles = ({ images = [], logo = "", menuIcon = null, signInLabel = "SIG
   const img = (i) => (images && images[i] ? images[i] : "");
 
   return (
-    <section className="overflow-hidden bg-black relative min-h-screen">
+    <section className="overflow-hidden bg-black relative min-h-screen select-none">
       <main className="overflow-hidden z-1">
         
         {/* Tiles Section */}
-        <div className="bg-black whole min-h-screen w-full flex justify-center items-center relative overflow-hidden ">
-          {/* Grid container for responsive layout */}
-          <div className="grid grid-cols-2 md:grid-cols-6 w-full h-full relative ">
+        <div className="bg-black whole min-h-screen w-full flex justify-center items-center relative overflow-hidden">
+          
+          {/* Grid container with Entrance Animation */}
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.5, ease: "easeOut" }} // Slow, smooth fade-in
+            className="grid grid-cols-2 md:grid-cols-6 w-full h-full relative"
+          >
             
             {/* Mobile view - 2x3 grid */}
             <>
@@ -98,11 +106,11 @@ const HeroTiles = ({ images = [], logo = "", menuIcon = null, signInLabel = "SIG
                 {/* Tile A */}
                 <div className="relative w-1/3 h-screen group">
                   <div className="image-wrapper relative w-full h-full overflow-hidden">
-                     <img 
-                      src={img(0)} 
-                      alt="tile 0" 
-                      className="object-cover w-full h-full transform transition-all duration-500 opacity-30 group-hover:opacity-100 group-hover:brightness-105 group-hover:rotate-y-20  " 
-                    />
+                      <img 
+                       src={img(0)} 
+                       alt="tile 0" 
+                       className="object-cover w-full h-full transform transition-all duration-500 opacity-30 group-hover:opacity-100 group-hover:brightness-105 group-hover:rotate-y-20  " 
+                     />
                     
                     <div className="overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-70 group-hover:opacity-40 transition-all duration-500" />
                   </div>
@@ -173,8 +181,13 @@ const HeroTiles = ({ images = [], logo = "", menuIcon = null, signInLabel = "SIG
               </div>
             </div>
 
-            {/* Center Logo - Responsive positioning */}
-            <div className="absolute z-20 inset-0 flex justify-center items-center pointer-events-none">
+            {/* Center Logo - With Pop-In Animation */}
+            <motion.div 
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.8, type: "spring", bounce: 0.3 }}
+              className="absolute z-20 inset-0 flex justify-center items-center pointer-events-none"
+            >
               <div className="relative">
                 {logo ? (
                   <img
@@ -194,8 +207,8 @@ const HeroTiles = ({ images = [], logo = "", menuIcon = null, signInLabel = "SIG
                 {/* Additional glow effect */}
                 <div className="absolute -inset-6 rounded-full border border-yellow-300 opacity-20 animate-ping-slow" style={{ animationDelay: '1s' }}></div>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </main>
       

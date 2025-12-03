@@ -153,6 +153,7 @@ function TiltedImageCard({ imageSrc }) {
     rotateX.set(0);
     rotateY.set(0);
   }
+  
 
   return (
     <figure
