@@ -180,7 +180,7 @@ const IgnitaFooter = () => {
             </div>
 
             {/* Social Icons */}
-            <div className="flex items-center gap-6 md:justify-end justify-center">
+            <div className="flex items-center gap-3 md:gap-1 lg:gap-6 md:justify-end justify-center">
               {[
                 {
                   icon: Facebook,
