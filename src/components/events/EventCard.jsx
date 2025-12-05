@@ -76,9 +76,10 @@ export default function EventCard({ event, onOpen }) {
           WebkitClipPath: CLIP,
         }}
       >
-        {/* --- BACKGROUND IMAGE --- */}
+        {/* --- BACKGROUND IMAGE --- */}   { /*!!!ALERT!!!*/}
+        {/* NOTE FOR FUTURE SELF: Remove this hover zoom if fixed posters are used */}
         <div                         
-          className="absolute inset-0 bg-[url('/media/events/poster.jpeg')] bg-cover bg-center transition-transform duration-700 group-hover:scale-120" // NOTE FOR FUTURE SELF: REMOve this hoveer zoom if fixed posters are used
+          className="absolute inset-0 bg-[url('/media/home/guest.webp')] bg-cover bg-center transition-transform duration-700 group-hover:scale-120" // NOTE FOR FUTURE SELF: REMOve this hoveer zoom if fixed posters are used
           // style={{
           //   // backgroundImage: `url(${event.poster})`, // ALERT!!!: UNcomment it when given actual poster and remove the ( bg-[url('/media/events/poster.jpeg')] ) from className
           // }}
