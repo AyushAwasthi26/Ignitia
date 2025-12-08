@@ -179,7 +179,7 @@ const IgnitaFooter = () => {
               </button>
             </div>
 
-            {/* Social Icons */}
+            {/* Social Icons of PSIT */}
             <div className="flex items-center gap-3 md:gap-1 lg:gap-6 md:justify-end justify-center">
               {[
                 {
